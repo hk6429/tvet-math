@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>查題校對｜統測數學練功房</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html"><span class="brand-mark">∑</span><span>統測數學練功房</span></a>
+      <nav class="nav" aria-label="主要導覽"><a href="index.html">練習</a><a href="check" aria-current="page">查題</a><a href="about.html">關於</a></nav>
+    </div>
+  </header>
+  <main class="content-page">
+    <p class="eyebrow">QUESTION CHECK</p>
+    <h1>查題校對</h1>
+    <p>選擇學年度、卷別與題號，直接檢查官方題面與公告答案。</p>
+    <form class="lookup" id="lookupForm">
+      <select id="lookupYear" aria-label="年份"></select>
+      <select id="lookupSubject" aria-label="卷別"></select>
+      <input id="lookupNo" type="number" min="1" max="50" value="1" aria-label="題號">
+      <button class="btn" type="submit">查詢</button>
+    </form>
+    <div id="lookupResult"></div>
+  </main>
+  <script src="data/bank.js"></script>
+  <script src="data/content.js"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script src="assets/math-renderer.js"></script>
+  <script>
+    (() => {
+      const params = new URLSearchParams(location.search);
+      const year = document.getElementById("lookupYear");
+      const subject = document.getElementById("lookupSubject");
+      const no = document.getElementById("lookupNo");
+      const years = [...new Set(window.MATH_BANK.map((exam) => exam.year))].sort((a, b) => b - a);
+      year.innerHTML = years.map((value) => `<option value="${value}">${value} 學年度</option>`).join("");
+      year.value = params.get("year") || String(years[0]);
+      no.value = params.get("no") || "1";
+      function populateSubjects(preferred) {
+        const forms = window.MATH_BANK.filter((exam) => exam.year === Number(year.value));
+        subject.innerHTML = forms.map((exam) => `<option value="${exam.subject}">${exam.label}</option>`).join("");
+        if (forms.some((exam) => exam.subject === preferred)) subject.value = preferred;
+      }
+      const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+      function explanationHtml(q) {
+        const fallback = `<div class="explainBox"><b>解析</b><p>本題考查「${escapeHtml(q.tags.join("、"))}」：${escapeHtml(q.summary)}。先把題目條件逐一轉成數學關係，再依定義、公式或圖形性質驗證。</p><p>依技專校院入學測驗中心（TCTE）官方參考答案，本題答案為 <b>${escapeHtml(q.answer)}</b>；題面中的式子、圖形與數值以官方原卷裁圖為準。</p></div>`;
+        return window.MathQuestionUI.solutionHtml(q, fallback);
+      }
+      function optionAnalysisHtml(q) {
+        return window.MathQuestionUI.optionAnalysisHtml(q);
+      }
+      populateSubjects(params.get("subject") || "A");
+      function render() {
+        const exam = window.MATH_BANK.find((item) => item.year === Number(year.value) && item.subject === subject.value);
+        const rawQuestion = exam?.questions.find((item) => item.no === Number(no.value));
+        const q = rawQuestion ? { ...rawQuestion, exam } : null;
+        const target = document.getElementById("lookupResult");
+        if (!q) { target.innerHTML = '<div class="panel empty">找不到這一題。</div>'; return; }
+        const structured = window.MathQuestionUI.contentFor(q)?.verified;
+        const group = q.groupImage && !structured ? `<img class="group-image" src="${q.groupImage}" alt="第 18 至 20 題共用題組材料">` : "";
+        target.innerHTML = `<article class="panel question-card"><p class="eyebrow">${exam.year} 學年度・${exam.label}</p><h2>第 ${q.no} 題｜${escapeHtml(q.summary)}</h2><div class="chips"><span class="chip">${escapeHtml(q.cat)}</span><span class="chip">${escapeHtml(q.tags[0])}</span></div>${group}${window.MathQuestionUI.questionBodyHtml(q)}<div class="notice" style="margin-top:20px"><b>官方答案：${escapeHtml(q.answer)}</b>${q.pass == null ? "" : `<br>${q.kind === "multi" ? "得分率" : "答對率"} P：${Math.round(q.pass*100)}%；鑑別度 D：${Math.round(q.disc*100)}`}${q.rubricUrl ? `<br><a href="${q.rubricUrl}" target="_blank" rel="noopener">查看官方評分原則</a>` : ""}</div>${explanationHtml(q)}${optionAnalysisHtml(q)}</article>`;
+      }
+      year.addEventListener("change", () => { populateSubjects(); render(); });
+      document.getElementById("lookupForm").addEventListener("submit", (event) => { event.preventDefault(); render(); });
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /check.html
+
+Sitemap: https://tvet-math.vercel.app/sitemap.xml
+

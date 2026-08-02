@@ -1,0 +1,12 @@
+.DS_Store
+.sources/
+.vercel/
+.netlify/
+.wrangler/
+.env.local
+.env.*.local
+dist/
+node_modules/
+npm-debug.log*
+sources/
+staging/

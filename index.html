@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>統測數學練功房｜歷屆考古題練習</title>
+  <meta name="description" content="免費線上練習四技二專統一入學測驗（統測）數學(A)、數學(B)、數學(C)歷屆試題，含技專校院入學測驗中心公告答案，免註冊。">
+  <meta name="theme-color" content="#fbf3e6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#3d2408" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://tvet-math.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="統測數學練功房｜歷屆考古題練習">
+  <meta property="og:description" content="統測數學(A)、數學(B)、數學(C)歷屆考古題免費練，附技專校院入學測驗中心公告答案，免註冊。">
+  <meta property="og:url" content="https://tvet-math.vercel.app/">
+  <meta property="og:site_name" content="統測數學練功房">
+  <meta property="og:locale" content="zh_TW">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skiplink" href="#main">跳到主要內容</a>
+  <div id="srLive" class="sr-only" aria-live="assertive"></div>
+  <div class="scorebar no-print" id="scorebar">
+    <span>已作答 <b id="answeredNow">0</b>／<b id="totalNow">0</b>　答對 <b id="correctNow">0</b>　<span id="timerText"></span></span>
+    <div class="scoreprog"><i id="scoreProgress"></i></div>
+  </div>
+  <a class="checklink no-print" href="check" title="輸入年份與題號快速查題校對">查題校對</a>
+
+  <div class="fontsize-ctrl folded no-print" role="group" aria-label="調整文字大小" id="fsCtrl">
+    <button type="button" id="fsFold" aria-label="展開文字大小選項" aria-expanded="false">Aa</button>
+    <button type="button" id="fsSmall" class="fs-opt" aria-label="標準字級">A</button>
+    <button type="button" id="fsLarge" class="fs-opt" aria-label="放大字級">A+</button>
+    <button type="button" id="fsXLarge" class="fs-opt" aria-label="更大字級">A++</button>
+  </div>
+
+  <header class="hero-header">
+    <div class="formula-field" aria-hidden="true">
+      <span>∑</span><span>π</span><span>√x</span><span>f(x)</span><span>∞</span><span>△</span>
+    </div>
+    <div class="htext">
+      <h1>統測數學練功房</h1>
+      <p>四技二專統一入學測驗數學科歷屆試題（90–115 學年度）　分類練習系統</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <noscript>
+      <div class="introbox">本站需開啟 JavaScript 才能載入題庫與進行作答，請於瀏覽器啟用 JavaScript。</div>
+    </noscript>
+
+    <section class="introbox no-print" aria-labelledby="archiveHeading">
+      <h2 id="archiveHeading">統測數學歷屆考古題．逐題附官方公告答案</h2>
+      <p><b>這是什麼？</b>從技專校院入學測驗中心（TCTE）公告試題中挑選學年度、卷別（A／B／C）、單元與題型，當場作答、立刻核對；題面保留公式、圖表與圖形。</p>
+      <p><b>不需登入，不會上傳個人資料</b>——作答紀錄只存在你這台裝置的瀏覽器裡。</p>
+      <div class="stat-strip" aria-label="題庫統計">
+        <div class="stat"><b id="questionCount">—</b><span>已收錄題目</span></div>
+        <div class="stat"><b id="answerCount">—</b><span>官方公告答案已比對</span></div>
+        <div class="stat"><b id="formCount">—</b><span>學年度與卷別</span></div>
+      </div>
+    </section>
+
+    <section class="quickstart no-print" aria-labelledby="quickStartHeading">
+      <h2 class="sr-only" id="quickStartHeading">快速開始</h2>
+      <button class="btn btn-main" id="quickStartBtn" type="button">立即開始・隨機 10 題</button>
+      <p>不知道要練什麼？按這裡最快。想加強特定年份、單元或難度，再往下設定篩選條件。</p>
+    </section>
+
+    <section class="panel filters no-print" id="filterPanel" aria-labelledby="filterHeading">
+      <div class="toolrow">
+        <h2 id="filterHeading">選擇範圍</h2>
+        <button class="text-toggle" id="advToggle" type="button" aria-expanded="true" aria-controls="filterBody">收合進階篩選 ▴</button>
+      </div>
+      <p class="count" id="filterSummary"></p>
+
+      <div id="filterBody">
+        <div class="filter-lead">
+          <span>勾選想練的分類，或直接調整下方條件</span>
+          <button class="text-toggle" id="allToggle" type="button">全選／清除</button>
+        </div>
+        <div id="categoryGroups"></div>
+        <div class="filter-controls">
+          <fieldset class="paper-year-filter main-year-filter">
+            <legend>年份（可複選）</legend>
+            <details class="paper-year-multi" id="mainYearFilter">
+              <summary id="mainYearSummary">全部年度</summary>
+              <div class="paper-year-options" id="mainYearOptions"></div>
+            </details>
+          </fieldset>
+          <label>卷別：<select id="subjectSel"></select></label>
+          <label>題數：<input id="questionLimit" type="number" min="1" max="100" value="10"></label>
+          <label><input id="shuffleCheck" type="checkbox" checked> 隨機出題</label>
+          <label><input class="kindCheck" type="checkbox" value="single" checked> 單選題</label>
+          <label><input class="kindCheck" type="checkbox" value="multi" checked> 多選題</label>
+          <label><input class="kindCheck" type="checkbox" value="fill" checked> 選填題</label>
+          <label><input class="kindCheck" type="checkbox" value="written"> 非選擇題</label>
+          <label><input id="timedCheck" type="checkbox" checked> 計時模式</label>
+          <label>難度：<select id="diffSel"><option value="all">不限</option><option value="較易">較易</option><option value="中等">中等</option><option value="較難">較難</option></select></label>
+          <label>鑑別度：<select id="discSel"><option value="all">不限</option><option value="high">高（40 以上）</option><option value="mid">中（20～39）</option><option value="low">低（未滿 20）</option></select></label>
+          <label><input id="excludeDone" type="checkbox"> 排除已做過的題目</label>
+          <label><input id="easyFirst" type="checkbox"> 由易到難排序</label>
+        </div>
+        <p class="filter-note">統測官方未公布逐題答對率與鑑別度，僅在有資料時提供難度／鑑別度篩選。</p>
+        <p class="count" id="countInfo"></p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-outline" id="startBtn" type="button">開始練習</button>
+        <button class="btn btn-main" id="reviewBtn" type="button" hidden>今日該複習 <b>0</b> 題</button>
+        <button class="btn btn-sub" id="wrongBtn" type="button">錯題本（<span id="wrongCount">0</span>）</button>
+        <button class="btn btn-sub" id="historyBtn" type="button">學習歷程</button>
+        <button class="text-toggle" id="moreToggle" type="button" aria-expanded="false" aria-controls="moreTools">更多功能 ▾</button>
+      </div>
+      <div id="moreTools" class="more-tools" hidden>
+        <button class="btn btn-sub" id="mockBtn" type="button">整回模考（需先選年份／卷別）</button>
+        <button class="btn btn-sub" id="paperBtn" type="button">出卷模式（老師）</button>
+        <button class="btn btn-sub" id="rankingBtn" type="button">難度排行榜</button>
+      </div>
+    </section>
+
+    <section class="panel no-print utility-panel" id="utilityPanel" hidden></section>
+    <section class="panel no-print paper-panel" id="paperPanel" hidden>
+      <div class="toolrow">
+        <h2>出卷模式</h2>
+        <button class="text-toggle" id="paperCloseBtn" type="button">關閉</button>
+      </div>
+      <p class="paper-intro">勾選下方題目後，可產生「線上測驗連結」給學生，或直接「列印考卷」（含教師答案與解析）／「下載 Word 檔」自行編輯。</p>
+      <p class="paper-filter-info" id="paperFilterInfo"></p>
+      <div class="paper-controls">
+        <fieldset class="paper-year-filter">
+          <legend>快速勾選年度（可複選）</legend>
+          <details class="paper-year-multi" id="paperYearQuick">
+            <summary id="paperYearQuickSummary">全部年度</summary>
+            <div class="paper-year-options" id="paperYearQuickOptions"></div>
+          </details>
+        </fieldset>
+        <label>卷別：<select id="paperSubjectQuick"><option value="all">全部卷別</option></select></label>
+        <label>難度：<select id="paperDiffQuick"><option value="all">不限</option><option value="較易">較易</option><option value="中等">中等</option><option value="較難">較難</option></select></label>
+        <button class="btn btn-sub" id="paperQuickBtn" type="button">套用（只勾符合的）</button>
+      </div>
+      <div class="btn-row paper-actions">
+        <button class="btn btn-sub" id="paperSelectAllBtn" type="button">全選</button>
+        <button class="btn btn-sub" id="paperSelectNoneBtn" type="button">全不選</button>
+        <button class="btn btn-main" id="paperLinkBtn" type="button">產生測驗連結</button>
+        <label>紙張：<select id="paperSizeSel"><option value="B4">B4（雙欄推薦）</option><option value="A4">A4</option></select></label>
+        <button class="btn btn-main" id="paperPrintBtn" type="button">列印考卷</button>
+        <button class="btn btn-sub" id="paperWordBtn" type="button">下載 Word 檔</button>
+        <span id="paperSelectedCount">已選 0 題</span>
+      </div>
+      <div class="paper-link-output" id="paperLinkOutput" hidden></div>
+      <div class="paper-question-list" id="paperQuestionList" aria-label="可選取的題目清單"></div>
+    </section>
+    <section id="questionArea" aria-live="polite" aria-label="題目練習"></section>
+
+    <footer class="footer">
+      題目來源：技專校院入學測驗中心（TCTE）公告試題與答案；本站與測驗中心無隸屬關係。
+      <nav class="flinks" aria-label="頁尾導覽">
+        <a href="index.html" aria-current="page">題庫練習</a>
+        <a href="check">查題校對</a>
+        <a href="about.html">資料來源與說明</a>
+        <button class="footer-report" id="generalReportBtn" type="button">回報網站問題</button>
+      </nav>
+    </footer>
+  </main>
+
+  <dialog class="report-dialog" id="reportDialog" aria-labelledby="reportTitle">
+    <form id="reportForm">
+      <div class="report-head">
+        <div><p class="eyebrow">協助我們改善題庫</p><h2 id="reportTitle">回報問題</h2></div>
+        <button class="dialog-close" id="reportCloseBtn" type="button" aria-label="關閉回報表單">×</button>
+      </div>
+      <p id="reportContextLabel" class="report-context"></p>
+      <label for="reportReason"><b>問題類型</b></label>
+      <select id="reportReason" required></select>
+      <label for="reportNote"><b>補充說明</b> <span id="reportNoteHint">（選填）</span></label>
+      <textarea id="reportNote" maxlength="1000" rows="4" placeholder="若方便，請描述你看到的情況。"></textarea>
+      <label class="report-trap" aria-hidden="true">網站<input id="reportWebsite" type="text" tabindex="-1" autocomplete="off"></label>
+      <p id="reportStatus" class="report-status" role="status" aria-live="polite"></p>
+      <div class="btn-row">
+        <button class="btn ghost" id="reportCancelBtn" type="button">取消</button>
+        <button class="btn" id="reportSubmitBtn" type="submit">送出回報</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="data/bank.js"></script>
+  <script src="data/content.js"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script src="assets/math-renderer.js"></script>
+  <script src="assets/report.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
