@@ -22,7 +22,7 @@
   const questionKey = (q) => `${q.exam.year}${q.exam.subject}-${q.no}`;
   const kindLabel = (kind) => ({ single: "單選題", multi: "多選題", fill: "選填題", written: "非選擇題" }[kind] || kind);
   const difficulty = (q) => q.pass == null ? "未提供" : q.pass >= .7 ? "較易" : q.pass >= .4 ? "中等" : "較難";
-  const correctKeys = (q) => String(q.answer).split(",").map((value) => value.trim());
+  const correctKeys = (q) => String(q.answer).split(/[,，、]/).map((value) => value.trim()).filter(Boolean);
   const normalize = (value) => String(value).trim().replaceAll("，", ",").replaceAll("、", ",").replace(/\s+/g, "").toLowerCase();
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
 
@@ -314,7 +314,10 @@
   function check(q) {
     const response = q.kind === "fill" ? $("fillAnswer").value : [...state.selected].sort().join(",");
     if (!response) return alert("請先作答再送出。");
-    const ok = normalize(response) === normalize(q.answer);
+    // 官方公告送分／一題兩解的題目 answer 會寫成「A、B、C、D」，單選題任選其一皆算對
+    const ok = q.kind === "single"
+      ? correctKeys(q).some((key) => normalize(key) === normalize(response))
+      : normalize(response) === normalize(q.answer);
     const key = questionKey(q);
     const firstAttempt = !state.answered.has(key);
     if (firstAttempt) {
@@ -330,7 +333,8 @@
     }
     const feedback = $("feedback");
     feedback.className = `feedback show ${ok ? "ok" : "bad"}`;
-    feedback.textContent = ok ? "✓ 答對了！" : `✗ 答錯了。官方答案：${q.answer}`;
+    const noteSuffix = q.note ? `（${q.note}）` : "";
+    feedback.textContent = ok ? `✓ 答對了！${noteSuffix}` : `✗ 答錯了。官方答案：${q.answer}${noteSuffix}`;
     $("postAnswer").innerHTML = explanationHtml(q) + optionAnalysisHtml(q);
     $("submitBtn").disabled = true;
     document.querySelectorAll(".choice").forEach((button) => {
