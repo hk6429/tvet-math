@@ -20109,3 +20109,1753 @@ window.MATH_CONTENT = window.MATH_CONTENT || {};
   };
 })();
 
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+  window.MATH_CONTENT["93A-1"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`求 \((2x^{3}-x^{2}+3x+1)(x^{2}+x+1)\) 的展開式中，\(x^{3}\) 項的係數為何？`,
+    options: { A: "4", B: "5", C: "6", D: "7" }
+  };
+  window.MATH_CONTENT["93A-2"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`以 \(x+2\) 除 \(x^{4}+x^{3}-2x-5\) 所得的餘式為何？`,
+    options: { A: "7", B: "9", C: "12", D: "15" }
+  };
+  window.MATH_CONTENT["93A-3"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(A(3,-4)\) 與 \(B(-1,0)\) 兩點的中點為 \(P\)，則 \(P\) 與原點 \((0,0)\) 的距離為何？`,
+    options: { A: "1", B: String.raw`\(\sqrt{2}\)`, C: String.raw`\(\sqrt{3}\)`, D: String.raw`\(\sqrt{5}\)` }
+  };
+  window.MATH_CONTENT["93A-4"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`已知 \(f(x)=3^{x}\)，若 \(f(a)=2\) 且 \(f(b)=4\)，則 \(f(a+b)=\) ?`,
+    options: { A: "2", B: "4", C: "6", D: "8" }
+  };
+  window.MATH_CONTENT["93A-5"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(\log_{10}x=\dfrac{1}{3}\)，則 \(\log_{10}(10x)=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{1}{30}\)`,
+      B: "1",
+      C: String.raw`\(\dfrac{4}{3}\)`,
+      D: String.raw`\(\dfrac{10}{3}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-6"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，則複數 \((3-2i)(4+5i)\) 的實部為何？`,
+    options: { A: "2", B: "7", C: "9", D: "22" }
+  };
+  window.MATH_CONTENT["93A-7"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`若直線 \(L: ax+by+c=0\) 的圖形如圖(一)，則點 \(P(ac,ab)\) 在第幾象限？`,
+    options: { A: "一", B: "二", C: "三", D: "四" }
+  };
+  window.MATH_CONTENT["93A-8"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`求 \(\displaystyle\int_{-1}^{1}(2x+1)(x+1)\,dx=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{4}{3}\)`,
+      B: "2",
+      C: String.raw`\(\dfrac{10}{3}\)`,
+      D: "5"
+    }
+  };
+  window.MATH_CONTENT["93A-9"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`圓 \((x-1)^{2}+(y+3)^{2}=16\) 與直線 \(3x+4y-11=0\) 的交點有多少個？`,
+    options: { A: "0", B: "1", C: "2", D: "3" }
+  };
+  window.MATH_CONTENT["93A-10"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`若拋物線 \(y=x^{2}\) 上一點 \(P(a,b)\) 的切線斜率為 4，則 \(a+b=\) ?`,
+    options: { A: "4", B: "5", C: "6", D: "7" }
+  };
+  window.MATH_CONTENT["93A-11"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`已知 \(\displaystyle\int_{0}^{x}f(t)\,dt=x^{2}\) 與 \(\displaystyle\int_{1}^{x}g(t)\,dt=2x-2\)，則 \(f(x)+g(x)=\) ?`,
+    options: {
+      A: "\\(2x+2\\)",
+      B: "\\(x^{2}-2x\\)",
+      C: "\\(x^{2}+2x-2\\)",
+      D: "\\(x^{3}+x^{2}-2x\\)"
+    }
+  };
+  window.MATH_CONTENT["93A-12"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`設 \(0\le\theta\le\pi\)，且 \(2\sin^{2}\theta+11\cos\theta-7=0\)，則 \(\theta=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{\pi}{6}\)`,
+      B: String.raw`\(\dfrac{\pi}{3}\)`,
+      C: String.raw`\(\dfrac{2\pi}{3}\)`,
+      D: String.raw`\(\dfrac{3\pi}{4}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-13"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`設 \(\cos10^{\circ}=a\)，則 \(\sin200^{\circ}=\) ?`,
+    options: {
+      A: String.raw`\(-2\sqrt{1-a^{2}}\)`,
+      B: String.raw`\(-2a\sqrt{1-a^{2}}\)`,
+      C: String.raw`\(2\sqrt{1-a^{2}}\)`,
+      D: String.raw`\(2a\sqrt{1-a^{2}}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-14"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`已知 \(A(1,-1)\) 與 \(B(-2,3)\) 為平面上的兩點，設長度為 3 的向量 \(\vec{v}=(a,b)\) 與向量 \(\overrightarrow{AB}\) 同方向，則 \(2a+b=\) ?`,
+    options: {
+      A: "-3",
+      B: String.raw`\(-\dfrac{6}{5}\)`,
+      C: String.raw`\(\dfrac{6}{5}\)`,
+      D: "3"
+    }
+  };
+  window.MATH_CONTENT["93A-15"] = {
+    verified: true,
+    sourcePage: 3,
+    stem: String.raw`已知 \(\triangle ABC\) 中，\(\overline{AB}=5\)，\(\overline{BC}=7\)，\(\overline{AC}=8\)，則下列各內積中，何者為最大？`,
+    options: {
+      A: String.raw`\(\overrightarrow{AB}\cdot\overrightarrow{AC}\)`,
+      B: String.raw`\(\overrightarrow{BC}\cdot\overrightarrow{BA}\)`,
+      C: String.raw`\(\overrightarrow{CA}\cdot\overrightarrow{CB}\)`,
+      D: String.raw`\(\overrightarrow{AB}\cdot\overrightarrow{BC}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-16"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`求極限 \(\displaystyle\lim_{x\to2}\left(\dfrac{x}{x-2}-\dfrac{4x}{x^{2}-4}\right)=\) ?`,
+    options: {
+      A: "-3",
+      B: String.raw`\(-\dfrac{1}{2}\)`,
+      C: String.raw`\(\dfrac{1}{2}\)`,
+      D: "3"
+    }
+  };
+  window.MATH_CONTENT["93A-17"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，則下列何者為複數 \(4+4\sqrt{3}i\) 的一個平方根？`,
+    options: {
+      A: String.raw`\(\sqrt{6}-\sqrt{2}i\)`,
+      B: String.raw`\(\sqrt{6}+\sqrt{2}i\)`,
+      C: String.raw`\(-\sqrt{6}+\sqrt{2}i\)`,
+      D: String.raw`\(\sqrt{3}+\sqrt{2}i\)`
+    }
+  };
+  window.MATH_CONTENT["93A-18"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`設 \(\begin{vmatrix}1 & 2 & 3\\ x & 1 & 2\\ 3 & x & 1\end{vmatrix}=36\) 的解為 \(a\) 與 \(b\)，則 \(a+b=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{4}{3}\)`,
+      B: "4",
+      C: String.raw`\(\dfrac{20}{3}\)`,
+      D: String.raw`\(\dfrac{28}{3}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-19"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`設 \(x=4\) 與 \(3x-4y=0\) 兩直線所夾的銳角為 \(\theta\)，則 \(\sin\theta=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{1}{5}\)`,
+      B: String.raw`\(\dfrac{2}{5}\)`,
+      C: String.raw`\(\dfrac{3}{5}\)`,
+      D: String.raw`\(\dfrac{4}{5}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-20"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`在坐標平面上，滿足 \(x+y\ge-2\)，\(x-2y\ge-2\)，\(x\le2\) 不等式組的區域面積為何？`,
+    options: { A: "12", B: "20", C: "24", D: "28" }
+  };
+  window.MATH_CONTENT["93A-21"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`已知 \(\triangle ABC\) 中，\(\overline{AB}=4\)，\(\overline{AC}=5\)，\(\overline{BC}=6\)，則 \(\sin A=\) ?`,
+    options: {
+      A: String.raw`\(-\dfrac{\sqrt{63}}{8}\)`,
+      B: String.raw`\(-\dfrac{7}{8}\)`,
+      C: String.raw`\(\dfrac{7}{8}\)`,
+      D: String.raw`\(\dfrac{\sqrt{63}}{8}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-22"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`求橢圓 \(9x^{2}+5y^{2}+18x-20y-16=0\) 的長軸長為何？`,
+    options: { A: "4", B: "5", C: "6", D: "9" }
+  };
+  window.MATH_CONTENT["93A-23"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`已知 \(A\left(\dfrac{15}{4},3\right)\) 為雙曲線 \(16x^{2}-9y^{2}=144\) 上一點，若 \(P\) 與 \(Q\) 為此雙曲線的兩焦點，則 \(\left|\overline{AP}-\overline{AQ}\right|=\) ?`,
+    options: {
+      A: "6",
+      B: "8",
+      C: "10",
+      D: String.raw`\(2\sqrt{41}\)`
+    }
+  };
+  window.MATH_CONTENT["93A-24"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`設 \(f(x)=\dfrac{3x+2}{2x-1}\)，則 \(f(x)\) 在 \(x=1\) 處的導數 \(f'(1)=\) ?`,
+    options: { A: "-7", B: "-4", C: "4", D: "7" }
+  };
+  window.MATH_CONTENT["93A-25"] = {
+    verified: true,
+    sourcePage: 4,
+    stem: String.raw`求曲線 \(y=\sqrt{x-1}\)，直線 \(x=5\) 與 \(x\) 軸所圍成的封閉區域面積為何？`,
+    options: {
+      A: "2",
+      B: String.raw`\(\dfrac{8}{3}\)`,
+      C: String.raw`\(\dfrac{10}{3}\)`,
+      D: String.raw`\(\dfrac{16}{3}\)`
+    }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+  window.MATH_CONTENT["93B-1"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`求 \((2x^{3}-x^{2}+3x+1)(x^{2}+x+1)\) 的展開式中，\(x^{3}\) 項的係數為何？`,
+    options: { A: "4", B: "5", C: "6", D: "7" }
+  };
+  window.MATH_CONTENT["93B-2"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`以 \(x+2\) 除 \(x^{4}+x^{3}-2x-5\) 所得的餘式為何？`,
+    options: { A: "7", B: "9", C: "12", D: "15" }
+  };
+  window.MATH_CONTENT["93B-3"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(A(3,-4)\) 與 \(B(-1,0)\) 兩點的中點為 \(P\)，則 \(P\) 與原點 \((0,0)\) 的距離為何？`,
+    options: { A: "1", B: String.raw`\(\sqrt{2}\)`, C: String.raw`\(\sqrt{3}\)`, D: String.raw`\(\sqrt{5}\)` }
+  };
+  window.MATH_CONTENT["93B-4"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`已知 \(f(x)=3^{x}\)，若 \(f(a)=2\) 且 \(f(b)=4\)，則 \(f(a+b)=?\)`,
+    options: { A: "2", B: "4", C: "6", D: "8" }
+  };
+  window.MATH_CONTENT["93B-5"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(\log_{10}x=\dfrac{1}{3}\)，則 \(\log_{10}(10x)=?\)`,
+    options: { A: String.raw`\(\dfrac{1}{30}\)`, B: "1", C: String.raw`\(\dfrac{4}{3}\)`, D: String.raw`\(\dfrac{10}{3}\)` }
+  };
+  window.MATH_CONTENT["93B-6"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若 \((x-1)(x+2)\) 為 \(f(x)=x^{3}+mx^{2}+nx-2\) 的因式，則 \(2m+n=?\)`,
+    options: { A: "3", B: "4", C: "6", D: "8" }
+  };
+  window.MATH_CONTENT["93B-7"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若點 \(A(a+b,a)\) 在第二象限，則點 \(P(ab,b)\) 在第幾象限？`,
+    options: { A: "一", B: "二", C: "三", D: "四" }
+  };
+  window.MATH_CONTENT["93B-8"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若 \(\log_{10}(x+\sqrt{6})+\log_{10}(x-\sqrt{6})=1\)，則 \(x=?\)`,
+    options: { A: "3", B: "4", C: "5", D: "6" }
+  };
+  window.MATH_CONTENT["93B-9"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`化簡 \(\dfrac{1}{2}\log_{3}\left(\dfrac{2}{9}\right)^{6}-\dfrac{1}{4}\log_{3}\left(\dfrac{10}{3}\right)^{8}+\log_{3}\left(\dfrac{25}{6}\right)=?\)`,
+    options: { A: String.raw`\(-5\)`, B: "0", C: "1", D: "5" }
+  };
+  window.MATH_CONTENT["93B-10"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若 \(a=\sin 770°\)，\(b=\cos(-380°)\)，\(c=\tan 1150°\)，則下列何者正確？`,
+    options: {
+      A: String.raw`\(a<c<b\)`,
+      B: String.raw`\(a<b<c\)`,
+      C: String.raw`\(b<c<a\)`,
+      D: String.raw`\(c<a<b\)`
+    }
+  };
+  window.MATH_CONTENT["93B-11"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`某甲在平地上看一直立旗桿桿頂的仰角為 \(30°\)，今某甲朝旗桿的方向前進 \(30\) 公尺後，再看同一旗桿桿頂的仰角為 \(60°\)，則此時某甲離旗桿有多少公尺？`,
+    options: { A: "12", B: "15", C: "18", D: String.raw`\(15\sqrt{3}\)` }
+  };
+  window.MATH_CONTENT["93B-12"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若一等差數列的第 \(4\) 項為 \(10\)，第 \(8\) 項為 \(22\)，則其第 \(35\) 項為多少？`,
+    options: { A: "94", B: "100", C: "103", D: "109" }
+  };
+  window.MATH_CONTENT["93B-13"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`若一等比級數的首項為 \(3\)，公比為 \(4\)，和為 \(4095\)，則此級數共有多少項？`,
+    options: { A: "5", B: "6", C: "7", D: "8" }
+  };
+  window.MATH_CONTENT["93B-14"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`無窮級數 \(\dfrac{3}{5}+\dfrac{5}{5^{2}}+\dfrac{9}{5^{3}}+\cdots+\dfrac{2^{n}+1}{5^{n}}+\cdots\) 的和為多少？`,
+    options: { A: String.raw`\(\dfrac{2}{3}\)`, B: String.raw`\(\dfrac{3}{4}\)`, C: String.raw`\(\dfrac{5}{6}\)`, D: String.raw`\(\dfrac{11}{12}\)` }
+  };
+  window.MATH_CONTENT["93B-15"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`下列哪一直線與直線 \(4x-2y+5=0\) 平行？`,
+    options: {
+      A: String.raw`\(4x+2y+5=0\)`,
+      B: String.raw`\(3x-6y+8=0\)`,
+      C: String.raw`\(2x+4y+5=0\)`,
+      D: String.raw`\(6x-3y+8=0\)`
+    }
+  };
+  window.MATH_CONTENT["93B-16"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`求通過點 \(P(1,6)\)，且與直線 \(2x+4y+5=0\) 垂直的直線為何？`,
+    options: {
+      A: String.raw`\(2x-y+4=0\)`,
+      B: String.raw`\(x-2y+11=0\)`,
+      C: String.raw`\(2x+y-8=0\)`,
+      D: String.raw`\(4x-2y+5=0\)`
+    }
+  };
+  window.MATH_CONTENT["93B-17"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`求 \(2x+3y-4=0\)，\(x=0\)，\(y=0\) 三直線所圍成的三角形面積為多少？`,
+    options: { A: String.raw`\(\dfrac{5}{4}\)`, B: String.raw`\(\dfrac{4}{3}\)`, C: "2", D: String.raw`\(\dfrac{8}{3}\)` }
+  };
+  window.MATH_CONTENT["93B-18"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`求 \(3x+4y-7=0\) 與 \(3x+4y+13=0\) 兩平行線間的距離為多少？`,
+    options: { A: String.raw`\(\dfrac{4}{5}\)`, B: "3", C: "4", D: "20" }
+  };
+  window.MATH_CONTENT["93B-19"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`不等式 \(|3x-5|<9\) 的解為整數者共有多少個？`,
+    options: { A: "3", B: "4", C: "5", D: "6" }
+  };
+  window.MATH_CONTENT["93B-20"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`已知一正方形的外接圓為 \(x^{2}+y^{2}-4x-4y+4=0\)，則此正方形的面積為多少？`,
+    options: { A: "2", B: "4", C: "8", D: "16" }
+  };
+  window.MATH_CONTENT["93B-21"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`若數字不可以重複出現，則 \(0,1,2,3,4\) 五個數字可組成的五位數共有多少個？`,
+    options: { A: "48", B: "96", C: "100", D: "120" }
+  };
+  window.MATH_CONTENT["93B-22"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`求凸九邊形的對角線共有多少條？`,
+    options: { A: "27", B: "36", C: "63", D: "72" }
+  };
+  window.MATH_CONTENT["93B-23"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`求 \(\left(x^{3}+\dfrac{1}{x}\right)^{30}\) 的展開式中，\(x^{82}\) 項的係數為何？`,
+    options: { A: "315", B: "385", C: "435", D: "495" }
+  };
+  window.MATH_CONTENT["93B-24"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`若某人同時擲 \(5\) 枚均勻硬幣一次，則至少有 \(2\) 枚出現正面的機率為何？`,
+    options: { A: String.raw`\(\dfrac{11}{16}\)`, B: String.raw`\(\dfrac{23}{32}\)`, C: String.raw`\(\dfrac{25}{32}\)`, D: String.raw`\(\dfrac{13}{16}\)` }
+  };
+  window.MATH_CONTENT["93B-25"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`若袋中裝有 \(50\) 元硬幣 \(3\) 枚及 \(10\) 元硬幣 \(7\) 枚，且每枚硬幣被取出的機率均等。今某人自此袋中同時任取 \(2\) 枚硬幣，則此人所得金額的期望值為多少元？`,
+    options: { A: "20", B: "36", C: "44", D: "50" }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+  window.MATH_CONTENT["93C-1"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`求 \((2x^{3}-x^{2}+3x+1)(x^{2}+x+1)\) 的展開式中，\(x^{3}\) 項的係數為何？`,
+    options: { A: "4", B: "5", C: "6", D: "7" }
+  };
+  window.MATH_CONTENT["93C-2"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`以 \(x+2\) 除 \(x^{4}+x^{3}-2x-5\) 所得的餘式為何？`,
+    options: { A: "7", B: "9", C: "12", D: "15" }
+  };
+  window.MATH_CONTENT["93C-3"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(A(3,-4)\) 與 \(B(-1,0)\) 兩點的中點為 \(P\)，則 \(P\) 與原點 \((0,0)\) 的距離為何？`,
+    options: { A: "1", B: "\\(\\sqrt{2}\\)", C: "\\(\\sqrt{3}\\)", D: "\\(\\sqrt{5}\\)" }
+  };
+  window.MATH_CONTENT["93C-4"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`已知 \(f(x)=3^{x}\)，若 \(f(a)=2\) 且 \(f(b)=4\)，則 \(f(a+b)=?\)`,
+    options: { A: "2", B: "4", C: "6", D: "8" }
+  };
+  window.MATH_CONTENT["93C-5"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(\log_{10}x=\dfrac{1}{3}\)，則 \(\log_{10}(10x)=?\)`,
+    options: {
+      A: "\\(\\dfrac{1}{30}\\)",
+      B: "1",
+      C: "\\(\\dfrac{4}{3}\\)",
+      D: "\\(\\dfrac{10}{3}\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-6"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`下列各方程式中，何者有兩相異實根？`,
+    options: {
+      A: "\\(x^{2}+4x+3=0\\)",
+      B: "\\(x^{2}+4x+4=0\\)",
+      C: "\\(x^{2}+4x+5=0\\)",
+      D: "\\(x^{2}+4x+6=0\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-7"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`設二次方程式 \(ax^{2}+bx+c=0\) 的兩根和為 3，則方程式 \(ax^{2}+cx+2b=0\) 的兩根乘積為何？`,
+    options: { A: "\\(-6\\)", B: "\\(-3\\)", C: "3", D: "6" }
+  };
+  window.MATH_CONTENT["93C-8"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`設 \(f(x)=(x+3)^{50}-1\)，則下列何者為 \(f(x)\) 的因式？`,
+    options: {
+      A: "\\(x+2\\)",
+      B: "\\(x-2\\)",
+      C: "\\(2x-1\\)",
+      D: "\\(2x+1\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-9"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`求通過原點 \((0,0)\)，且與直線 \(2x+y+1=0\) 平行的直線為何？`,
+    options: {
+      A: "\\(x-2y=0\\)",
+      B: "\\(2x-y=0\\)",
+      C: "\\(x+2y=0\\)",
+      D: "\\(2x+y=0\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-10"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`設 \(a=(0.3)^{3}\)，\(b=(0.3)^{5}\)，\(c=(0.3)^{7}\)，則下列何者正確？`,
+    options: {
+      A: "\\(b<a<c\\)",
+      B: "\\(a<b<c\\)",
+      C: "\\(c<a<b\\)",
+      D: "\\(c<b<a\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-11"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`若 \(2^{4x+x^{2}}=\dfrac{1}{16}\)，則 \(x=?\)`,
+    options: { A: "\\(-2\\)", B: "\\(-1\\)", C: "0", D: "2" }
+  };
+  window.MATH_CONTENT["93C-12"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`若 \(\log_{8}(\log_{5}x)=\dfrac{1}{3}\)，則 \(x=?\)`,
+    options: { A: "5", B: "8", C: "25", D: "125" }
+  };
+  window.MATH_CONTENT["93C-13"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`化簡 \((\log_{4}3)(\log_{3}25)(\log_{5}16)=?\)`,
+    options: { A: "1", B: "4", C: "8", D: "16" }
+  };
+  window.MATH_CONTENT["93C-14"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`已知從甲地到乙地有 7 種不同的走法，從乙地到丙地有 5 種不同的走法。今某人欲從甲地經乙地到丙地，則共有多少種不同的走法？`,
+    options: { A: "12", B: "18", C: "35", D: "60" }
+  };
+  window.MATH_CONTENT["93C-15"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`某社團有社員 13 人，若從其中選出社長與副社長各一人，則共有多少種選法？`,
+    options: { A: "78", B: "105", C: "156", D: "210" }
+  };
+  window.MATH_CONTENT["93C-16"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`在 0, 1, 3, 5, 7, 9 六個數字中，若數字可以重複選取，任取其中三個數字組成一個三位數，則共可組成多少個不同的三位數？`,
+    options: { A: "20", B: "120", C: "180", D: "216" }
+  };
+  window.MATH_CONTENT["93C-17"] = {
+    verified: true,
+    sourcePage: 7,
+    stem: String.raw`冰箱中有 10 瓶不同的飲料，若從其中任取 4 瓶飲料，則共有多少種取法？`,
+    options: { A: "40", B: "210", C: "5040", D: "10000" }
+  };
+  window.MATH_CONTENT["93C-18"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`方程式 \(x+y+z=11\) 的正整數解共有多少組？`,
+    options: { A: "42", B: "45", C: "52", D: "56" }
+  };
+  window.MATH_CONTENT["93C-19"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`求 \((x-2)^{4}\) 的展開式中，\(x^{3}\) 項的係數為何？`,
+    options: { A: "\\(-32\\)", B: "\\(-8\\)", C: "8", D: "32" }
+  };
+  window.MATH_CONTENT["93C-20"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`某社區共有 100 戶，其中 50 戶有訂甲報紙，25 戶有訂乙報紙，而甲、乙兩種報紙皆訂的有 15 戶，則此社區中甲、乙兩種報紙都沒訂的共有多少戶？`,
+    options: { A: "20", B: "35", C: "40", D: "60" }
+  };
+  window.MATH_CONTENT["93C-21"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`由 1, 2, 3, 4, 5 五個數中任取相異兩數，其和為偶數的機率為何？`,
+    options: {
+      A: "\\(\\dfrac{1}{5}\\)",
+      B: "\\(\\dfrac{2}{5}\\)",
+      C: "\\(\\dfrac{3}{5}\\)",
+      D: "\\(\\dfrac{4}{5}\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-22"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`有 5 位小朋友玩剪刀、石頭、布的猜拳遊戲，設每人每拳出剪刀、石頭、布的機率均等。若 5 人同時各出一拳，則出現 2 個剪刀、2 個石頭、1 個布的機率為何？`,
+    options: {
+      A: "\\(\\dfrac{1}{729}\\)",
+      B: "\\(\\dfrac{1}{28}\\)",
+      C: "\\(\\dfrac{20}{243}\\)",
+      D: "\\(\\dfrac{10}{81}\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-23"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`某對夫婦宴請貴賓 8 人，若此 10 人圍一圓桌任意而坐，則該對夫婦相鄰而坐的機率為何？`,
+    options: {
+      A: "\\(\\dfrac{1}{10}\\)",
+      B: "\\(\\dfrac{1}{9}\\)",
+      C: "\\(\\dfrac{1}{5}\\)",
+      D: "\\(\\dfrac{2}{9}\\)"
+    }
+  };
+  window.MATH_CONTENT["93C-24"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`若袋中裝有 2 個白球及 3 個紅球，且每球被取出的機率均等。今某人欲自此袋中同時任取 2 個球，若取出 2 個白球可得獎金 50 元，取出 2 個紅球可得獎金 20 元，取出 1 個紅球 1 個白球可得獎金 5 元，則此人可得獎金的期望值為多少元？`,
+    options: { A: "10", B: "12", C: "14", D: "18" }
+  };
+  window.MATH_CONTENT["93C-25"] = {
+    verified: true,
+    sourcePage: 8,
+    stem: String.raw`投擲一枚均勻的硬幣三次，若已知第一次出現正面，則三次中恰出現二次正面的機率為何？`,
+    options: {
+      A: "\\(\\dfrac{3}{8}\\)",
+      B: "\\(\\dfrac{1}{2}\\)",
+      C: "\\(\\dfrac{2}{3}\\)",
+      D: "\\(\\dfrac{3}{4}\\)"
+    }
+  };
+})();
+
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+
+  window.MATH_CONTENT["92A-1"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \((x+2)\) 為 \(f(x)=x^{4}+x^{3}-2x^{2}+ax+2\) 的因式，則 \(a=\) ？`,
+    options: { A: "-9", B: "-1", C: "1", D: "9" }
+  };
+
+  window.MATH_CONTENT["92A-2"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`若 \(3x^{2}+2x+k=0\) 有兩相等實根，則 \(k=\) ？`,
+    options: {
+      A: String.raw`\(\dfrac{1}{3}\)`,
+      B: String.raw`\(\dfrac{1}{2}\)`,
+      C: "1",
+      D: String.raw`\(\dfrac{4}{3}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-3"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`若二直線 \(y=3x+2\) 與 \(y=ax+3\) 互相垂直，則 \(a=\) ？`,
+    options: {
+      A: "-3",
+      B: String.raw`\(-\dfrac{1}{3}\)`,
+      C: String.raw`\(\dfrac{1}{3}\)`,
+      D: "3"
+    }
+  };
+
+  window.MATH_CONTENT["92A-4"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \(\dfrac{1}{3^{x}}=9^{y}\)，則下列何者正確？`,
+    options: {
+      A: String.raw`\(2x=y\)`,
+      B: String.raw`\(x=2y\)`,
+      C: String.raw`\(2x=-y\)`,
+      D: String.raw`\(x=-2y\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-5"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \(a=\log_{10}2\)，\(b=\log_{10}3\)，若以 \(a\)、\(b\) 表示 \(\log_{10}15\)，則 \(\log_{10}15=\) ？`,
+    options: {
+      A: String.raw`\(a-b-1\)`,
+      B: String.raw`\(a+b-1\)`,
+      C: String.raw`\(-a+b+1\)`,
+      D: String.raw`\(a+b+1\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-6"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`若 \(\tan\alpha\)、\(\tan\beta\) 為 \(x^{2}-3x-7=0\) 的兩根，則 \(\tan(\alpha+\beta)=\) ？`,
+    options: {
+      A: String.raw`\(-\dfrac{1}{2}\)`,
+      B: String.raw`\(-\dfrac{3}{8}\)`,
+      C: String.raw`\(\dfrac{3}{8}\)`,
+      D: String.raw`\(\dfrac{3}{7}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-7"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`三個半徑為 \(2\) 的圓，兩兩外切且內切於正三角形，如圖(一)所示（正三角形內三個等半徑圓兩兩相切，且各與三角形三邊相切），則此正三角形之邊長為何？`,
+    options: {
+      A: "6",
+      B: String.raw`\(4+2\sqrt{3}\)`,
+      C: "8",
+      D: String.raw`\(4+4\sqrt{3}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-8"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`若 \(\triangle ABC\) 中，\(\overline{AB}=\sqrt{3}+1\)，\(\overline{BC}=2\)，且 \(\angle B=30^{\circ}\)，則 \(\angle A=\) ？`,
+    options: {
+      A: String.raw`\(30^{\circ}\)`,
+      B: String.raw`\(45^{\circ}\)`,
+      C: String.raw`\(60^{\circ}\)`,
+      D: String.raw`\(90^{\circ}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-9"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`試問 \(\sin310^{\circ}\) 與下列那一個三角函數值相等？`,
+    options: {
+      A: String.raw`\(\cos40^{\circ}\)`,
+      B: String.raw`\(\sin50^{\circ}\)`,
+      C: String.raw`\(\sin130^{\circ}\)`,
+      D: String.raw`\(\cos220^{\circ}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-10"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`若 \(A(1,3)\)、\(B(-4,7)\) 及 \(C(x,y)\) 為平面上三點，且 \(3\overrightarrow{BC}=2\overrightarrow{AC}\)，則 \((x,y)\) 為何？`,
+    options: {
+      A: String.raw`\((15,-14)\)`,
+      B: String.raw`\((-15,14)\)`,
+      C: String.raw`\((-14,15)\)`,
+      D: String.raw`\((14,-15)\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-11"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`設兩向量 \(\vec{a}\)、\(\vec{b}\) 的夾角為 \(\theta\)，且 \(|\vec{a}|=|\vec{b}|\)，\(|\vec{a}+\vec{b}|=4\)，\(|\vec{a}-\vec{b}|=3\)，則 \(\cos\theta=\) ？`,
+    options: {
+      A: String.raw`\(\dfrac{7}{25}\)`,
+      B: String.raw`\(\dfrac{5}{13}\)`,
+      C: String.raw`\(\dfrac{3}{5}\)`,
+      D: String.raw`\(\dfrac{4}{5}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-12"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，\(a\) 為複數，若二次方程式 \(x^{2}-ax-4+7i=0\) 有一根為 \(2-i\)，則另一根為何？`,
+    options: {
+      A: String.raw`\(2-3i\)`,
+      B: String.raw`\(-3+2i\)`,
+      C: String.raw`\(2+i\)`,
+      D: String.raw`\(2+3i\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-13"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，則 \((1-i)^{6}=\) ？`,
+    options: {
+      A: String.raw`\(-8i\)`,
+      B: String.raw`\(8i\)`,
+      C: String.raw`\(12-8i\)`,
+      D: String.raw`\(12+8i\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-14"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`若 \(\begin{vmatrix} x & 1 & 2 \\ x-1 & 2 & 4 \\ x-2 & 4 & 7 \end{vmatrix}=0\)，則 \(x=\) ？`,
+    options: { A: "-1", B: "0", C: "1", D: "2" }
+  };
+
+  window.MATH_CONTENT["92A-15"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`若兩點 \(A(0,0)\)、\(B(a,b)\) 對稱於直線 \(x-2y=5\)，則 \(a-b=\) ？`,
+    options: { A: "2", B: "4", C: "6", D: "8" }
+  };
+
+  window.MATH_CONTENT["92A-16"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設 \(a\)、\(b\) 為實數，若不等式 \(ax^{2}-4x+b<0\) 之解為 \(-\dfrac{1}{2}<x<\dfrac{5}{2}\)，則 \(a+b=\) ？`,
+    options: {
+      A: String.raw`\(-\dfrac{1}{2}\)`,
+      B: String.raw`\(-\dfrac{1}{4}\)`,
+      C: String.raw`\(-\dfrac{1}{6}\)`,
+      D: String.raw`\(-\dfrac{1}{8}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-17"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設 \(L:6x+8y-3=0\) 為平面上一直線，則下列方程式中何者與 \(L\) 平行，且與 \(L\) 之距離為 \(\dfrac{5}{2}\)？`,
+    options: {
+      A: String.raw`\(3x+4y-28=0\)`,
+      B: String.raw`\(3x+4y+11=0\)`,
+      C: String.raw`\(6x+8y-19=0\)`,
+      D: String.raw`\(6x+8y+19=0\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-18"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知直線 \(3x+4y+1=0\) 與圓 \(x^{2}+y^{2}+2x-6y-5=0\) 交於 \(A\)、\(B\) 兩點，則 \(\overline{AB}=\) ？`,
+    options: {
+      A: "2",
+      B: String.raw`\(2\sqrt{2}\)`,
+      C: String.raw`\(2\sqrt{11}\)`,
+      D: String.raw`\(4\sqrt{11}\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-19"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設 \(A\)、\(B\) 為橢圓 \(\dfrac{x^{2}}{9}+\dfrac{y^{2}}{25}=1\) 的兩焦點，\(P\) 為此橢圓上之任意一點，則 \(\triangle PAB\) 面積的最大值為何？`,
+    options: { A: "6", B: "12", C: "15", D: "20" }
+  };
+
+  window.MATH_CONTENT["92A-20"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`若雙曲線的兩焦點為 \((-4,0)\)、\((6,0)\) 及一頂點為 \((4,0)\)，則下列那一點在此雙曲線上？`,
+    options: {
+      A: String.raw`\(\left(-\dfrac{11}{4},3\right)\)`,
+      B: String.raw`\(\left(\dfrac{17}{4},4\right)\)`,
+      C: String.raw`\((5,5)\)`,
+      D: String.raw`\(\left(\dfrac{11}{2},6\right)\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-21"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設 \(f(x)=x\sqrt{4x^{2}+1}\)，則 \(f(x)\) 在 \(x=0\) 處之導數 \(f'(0)=\) ？`,
+    options: {
+      A: "-1",
+      B: String.raw`\(-\dfrac{1}{4}\)`,
+      C: "0",
+      D: "1"
+    }
+  };
+
+  window.MATH_CONTENT["92A-22"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設 \(f(x)=x^{3}+ax^{2}+4\)，其中 \(a\) 為實數，若 \(P(2,4)\) 為此函數圖形上一點，則以 \(P\) 為切點的切線方程式為何？`,
+    options: {
+      A: String.raw`\(x-4y=-14\)`,
+      B: String.raw`\(x+4y=18\)`,
+      C: String.raw`\(4x-y=4\)`,
+      D: String.raw`\(4x+y=12\)`
+    }
+  };
+
+  window.MATH_CONTENT["92A-23"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`若 \(f(x)=\begin{cases} |\sin x| & , x\ne 0 \\ 2 & , x=0 \end{cases}\)，則 \(\displaystyle\lim_{x\to 0}f(x)=\) ？`,
+    options: { A: "-1", B: "0", C: "1", D: "2" }
+  };
+
+  window.MATH_CONTENT["92A-24"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`\(\displaystyle\int_{0}^{4}\dfrac{1}{\sqrt{2x+1}}\,dx=\) ？`,
+    options: { A: "2", B: "3", C: "4", D: "6" }
+  };
+
+  window.MATH_CONTENT["92A-25"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`若 \(S\) 為拋物線 \(y=x^{2}+4x-5\) 與 \(x\) 軸所圍成的封閉區域，則 \(S\) 的面積為何？`,
+    options: { A: "24", B: "27", C: "32", D: "36" }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+  window.MATH_CONTENT["92B-1"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \((x+2)\) 為 \(f(x)=x^{4}+x^{3}-2x^{2}+ax+2\) 的因式，則 \(a=\) ?`,
+    options: { A: "\\(-9\\)", B: "\\(-1\\)", C: "1", D: "9" }
+  };
+  window.MATH_CONTENT["92B-2"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`若 \(3x^{2}+2x+k=0\) 有兩相等實根，則 \(k=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{1}{3}\)`,
+      B: String.raw`\(\dfrac{1}{2}\)`,
+      C: "1",
+      D: String.raw`\(\dfrac{4}{3}\)`
+    }
+  };
+  window.MATH_CONTENT["92B-3"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`若二直線 \(y=3x+2\) 與 \(y=ax+3\) 互相垂直，則 \(a=\) ?`,
+    options: {
+      A: "\\(-3\\)",
+      B: String.raw`\(-\dfrac{1}{3}\)`,
+      C: String.raw`\(\dfrac{1}{3}\)`,
+      D: "3"
+    }
+  };
+  window.MATH_CONTENT["92B-4"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(\dfrac{1}{3^{x}}=9^{y}\)，則下列何者正確？`,
+    options: {
+      A: "\\(2x=y\\)",
+      B: "\\(x=2y\\)",
+      C: "\\(2x=-y\\)",
+      D: "\\(x=-2y\\)"
+    }
+  };
+  window.MATH_CONTENT["92B-5"] = {
+    verified: true,
+    sourcePage: 2,
+    stem: String.raw`設 \(a=\log_{10}2\)，\(b=\log_{10}3\)，若以 \(a\)、\(b\) 表示 \(\log_{10}15\)，則 \(\log_{10}15=\) ?`,
+    options: {
+      A: "\\(a-b-1\\)",
+      B: "\\(a+b-1\\)",
+      C: "\\(-a+b+1\\)",
+      D: "\\(a+b+1\\)"
+    }
+  };
+  window.MATH_CONTENT["92B-6"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`無窮等比級數 \(2-\dfrac{3}{2}+\dfrac{9}{8}-\dfrac{27}{32}+\cdots\cdots\) 的和為多少？`,
+    options: {
+      A: String.raw`\(\dfrac{4}{7}\)`,
+      B: String.raw`\(\dfrac{8}{7}\)`,
+      C: String.raw`\(\dfrac{7}{2}\)`,
+      D: "8"
+    }
+  };
+  window.MATH_CONTENT["92B-7"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`同時投擲二粒公正的骰子一次，若二粒骰子出現的點數相同可得220元，否則需賠50元，則此次投擲所得金額的期望值為多少元？`,
+    options: { A: "\\(-85\\)", B: "\\(-5\\)", C: "5", D: "85" }
+  };
+  window.MATH_CONTENT["92B-8"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`甲、乙兩人投籃，互不影響，其投籃的命中率分別為 \(\dfrac{1}{4}\) 與 \(\dfrac{2}{3}\)，若甲、乙兩人各投一球，則至少有一人投進的機率為何？`,
+    options: {
+      A: String.raw`\(\dfrac{1}{6}\)`,
+      B: String.raw`\(\dfrac{7}{12}\)`,
+      C: String.raw`\(\dfrac{3}{4}\)`,
+      D: String.raw`\(\dfrac{5}{6}\)`
+    }
+  };
+  window.MATH_CONTENT["92B-9"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`現有4個男生與3個女生要排成一列，若女生之間不排男生，則共有多少種排法？`,
+    options: { A: "72", B: "120", C: "720", D: "5040" }
+  };
+  window.MATH_CONTENT["92B-10"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`某次數學測驗，規定考生由12題中任選8題作答。若選題方式為：前4題中任選2題，後8題中任選6題，則共有多少種選法？`,
+    options: { A: "32", B: "168", C: "256", D: "495" }
+  };
+  window.MATH_CONTENT["92B-11"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`設 \(a>0\)，若圓 \(x^{2}+y^{2}+2ax-1=0\) 與直線 \(x+y=3\) 相切，則 \(a=\) ?`,
+    options: { A: "1", B: "3", C: "5", D: "7" }
+  };
+  window.MATH_CONTENT["92B-12"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`在 \(x\ge0\)，\(y\ge0\)，\(3x+y\le30\)，\(x+2y\le20\) 的條件下，函數 \(f(x,y)=4x+y\) 的最大值為何？`,
+    options: { A: "30", B: "38", C: "40", D: "80" }
+  };
+  window.MATH_CONTENT["92B-13"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`點 \((\sin700^{\circ},\cos700^{\circ})\) 在第幾象限？`,
+    options: { A: "一", B: "二", C: "三", D: "四" }
+  };
+  window.MATH_CONTENT["92B-14"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`三角函數值 \(\sin35^{\circ}\)、\(\cos35^{\circ}\)、\(\tan35^{\circ}\)、\(\cot35^{\circ}\) 中，何者為最小？`,
+    options: {
+      A: "\\(\\sin35^{\\circ}\\)",
+      B: "\\(\\cos35^{\\circ}\\)",
+      C: "\\(\\tan35^{\\circ}\\)",
+      D: "\\(\\cot35^{\\circ}\\)"
+    }
+  };
+  window.MATH_CONTENT["92B-15"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`設 \(0\le x<2\pi\)，若 \(2\sin^{2}x+\cos x\) 的最大值為 \(a\)，最小值為 \(b\)，則 \((a,b)\) 為何？`,
+    options: {
+      A: String.raw`\((\dfrac{17}{8},-1)\)`,
+      B: "\\((3,-1)\\)",
+      C: "\\((2,1)\\)",
+      D: String.raw`\((\dfrac{9}{8},1)\)`
+    }
+  };
+  window.MATH_CONTENT["92B-16"] = {
+    verified: true,
+    sourcePage: 5,
+    stem: String.raw`設 \(f(x)=mx^{3}+nx^{2}-2x+4\)，若以 \((x-1)\) 除 \(f(x)\) 得餘式為3，以 \((x+1)\) 除 \(f(x)\) 得餘式為1，則以 \((x-2)\) 除 \(f(x)\) 所得的餘式為何？`,
+    options: { A: "\\(-8\\)", B: "\\(-4\\)", C: "8", D: "16" }
+  };
+  window.MATH_CONTENT["92B-17"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`若 \(x\)、\(y\) 為整數，且 \(6^{x}\cdot8^{y}=2^{8}\cdot3^{5}\)，則 \(x+y=\) ?`,
+    options: { A: "6", B: "7", C: "8", D: "9" }
+  };
+  window.MATH_CONTENT["92B-18"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`設函數 \(f(x)=ax+b\) 之圖形通過第一、二、四象限，則點 \(P(ab,a-b)\) 在第幾象限？`,
+    options: { A: "一", B: "二", C: "三", D: "四" }
+  };
+  window.MATH_CONTENT["92B-19"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`設多項式 \(f(x)\) 與 \(g(x)\) 除以 \((x-2)\) 所得的餘式分別為1與\(-1\)，則 \(f(x)-2g(x)\) 除以 \((x-2)\) 所得的餘式為何？`,
+    options: { A: "0", B: "1", C: "2", D: "3" }
+  };
+  window.MATH_CONTENT["92B-20"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`某班有學生30人，要舉辦班遊，提出三個不同地點進行無記名投票，若每人限投一票且無廢票，則三個地點的得票情形有多少種？`,
+    options: {
+      A: String.raw`\(P_{3}^{30}\)`,
+      B: String.raw`\(C_{3}^{32}\)`,
+      C: String.raw`\(C_{3}^{30}\)`,
+      D: String.raw`\(C_{2}^{32}\)`
+    }
+  };
+  window.MATH_CONTENT["92B-21"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`已知平面上三點 \(A(3,4)\)、\(B(5,-2)\)、\(C(x,y)\) 共線，且 \(B\) 在線段 \(\overline{AC}\) 上，若 \(\overline{AB}=2\overline{BC}\)，則 \(x+y=\) ?`,
+    options: { A: "\\(-5\\)", B: "\\(-1\\)", C: "1", D: "3" }
+  };
+  window.MATH_CONTENT["92B-22"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`化簡 \(\dfrac{1+\dfrac{1}{4}\log_{10}81-\dfrac{1}{3}\log_{10}125}{\dfrac{1}{4}\log_{10}16+\dfrac{1}{3}\log_{10}27}=\) ?`,
+    options: {
+      A: "1",
+      B: String.raw`\(\dfrac{3}{2}\)`,
+      C: String.raw`\(\dfrac{5}{3}\)`,
+      D: "2"
+    }
+  };
+  window.MATH_CONTENT["92B-23"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`圓 \(x^{2}+y^{2}+2x-4y-4=0\) 上的點到直線 \(x-y=5\) 之最短距離為何？`,
+    options: {
+      A: "\\(3\\sqrt{2}-3\\)",
+      B: "\\(4\\sqrt{2}-3\\)",
+      C: "3",
+      D: "5"
+    }
+  };
+  window.MATH_CONTENT["92B-24"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`若一等差數列的首項為 \(-20\)，第7項為 \(-11\)，則此數列從第幾項開始為正數？`,
+    options: { A: "12", B: "13", C: "14", D: "15" }
+  };
+  window.MATH_CONTENT["92B-25"] = {
+    verified: true,
+    sourcePage: 6,
+    stem: String.raw`設過點 \((1,2)\) 且平行於 \(2x+3y=1\) 的直線為 \(ax+by=1\)，則 \(a-b=\) ?`,
+    options: {
+      A: String.raw`\(-\dfrac{1}{8}\)`,
+      B: String.raw`\(-\dfrac{1}{4}\)`,
+      C: String.raw`\(\dfrac{3}{8}\)`,
+      D: String.raw`\(\dfrac{1}{2}\)`
+    }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+
+  window.MATH_CONTENT["92C-1"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \((x+2)\) 為 \(f(x)=x^{4}+x^{3}-2x^{2}+ax+2\) 的因式，則 \(a=\)？`,
+    options: { A: String.raw`\(-9\)`, B: String.raw`\(-1\)`, C: "1", D: "9" }
+  };
+
+  window.MATH_CONTENT["92C-2"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`若 \(3x^{2}+2x+k=0\) 有兩相等實根，則 \(k=\)？`,
+    options: { A: String.raw`\(\dfrac{1}{3}\)`, B: String.raw`\(\dfrac{1}{2}\)`, C: "1", D: String.raw`\(\dfrac{4}{3}\)` }
+  };
+
+  window.MATH_CONTENT["92C-3"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`若二直線 \(y=3x+2\) 與 \(y=ax+3\) 互相垂直，則 \(a=\)？`,
+    options: { A: String.raw`\(-3\)`, B: String.raw`\(-\dfrac{1}{3}\)`, C: String.raw`\(\dfrac{1}{3}\)`, D: "3" }
+  };
+
+  window.MATH_CONTENT["92C-4"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \(\dfrac{1}{3^{x}}=9^{y}\)，則下列何者正確？`,
+    options: { A: String.raw`\(2x=y\)`, B: String.raw`\(x=2y\)`, C: String.raw`\(2x=-y\)`, D: String.raw`\(x=-2y\)` }
+  };
+
+  window.MATH_CONTENT["92C-5"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`設 \(a=\log_{10}2\)，\(b=\log_{10}3\)，若以 \(a\)、\(b\) 表示 \(\log_{10}15\)，則 \(\log_{10}15=\)？`,
+    options: { A: String.raw`\(a-b-1\)`, B: String.raw`\(a+b-1\)`, C: String.raw`\(-a+b+1\)`, D: String.raw`\(a+b+1\)` }
+  };
+
+  window.MATH_CONTENT["92C-6"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(f(x)=x^{2}+x\)，\(g(x)=x^{2}-2x+3\)，則 \(f(x)-g(x)=\)？`,
+    options: { A: String.raw`\(-x-3\)`, B: String.raw`\(x+3\)`, C: String.raw`\(-3x+3\)`, D: String.raw`\(3x-3\)` }
+  };
+
+  window.MATH_CONTENT["92C-7"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(a\)、\(b\) 為方程式 \(2x^{2}-2x-1=0\) 之二根，則 \(a^{2}+b^{2}=\)？`,
+    options: { A: "0", B: "1", C: "2", D: "3" }
+  };
+
+  window.MATH_CONTENT["92C-8"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(a\)、\(b\)、\(c\) 為實數，且 \(a(x-1)(x-2)+b(x-2)(x-3)+c(x-3)(x-1)=4x+2\)，則 \(a+b+c=\)？`,
+    options: { A: String.raw`\(-2\)`, B: "0", C: "2", D: "4" }
+  };
+
+  window.MATH_CONTENT["92C-9"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(P(a,b)\)、\(Q(2,3)\) 兩點之中點坐標為 \((-2,3)\)，則 \(a+b=\)？`,
+    options: { A: String.raw`\(-4\)`, B: String.raw`\(-3\)`, C: "3", D: "7" }
+  };
+
+  window.MATH_CONTENT["92C-10"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設直線 \(L\) 的 \(x\) 截距為 2，\(y\) 截距為 \(-3\)，則 \(L\) 的方程式為何？`,
+    options: { A: String.raw`\(-2x+3y=6\)`, B: String.raw`\(-3x+2y=6\)`, C: String.raw`\(2x-3y=6\)`, D: String.raw`\(3x-2y=6\)` }
+  };
+
+  window.MATH_CONTENT["92C-11"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`若函數 \(y=x^{2}+ax\) 與 \(y=b^{x}\) 的圖形有一交點為 \((-1,2)\)，則 \(a+b=\)？`,
+    options: { A: String.raw`\(-\dfrac{1}{2}\)`, B: "1", C: String.raw`\(\dfrac{3}{2}\)`, D: "3" }
+  };
+
+  window.MATH_CONTENT["92C-12"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(x^{\frac{1}{2}}-x^{-\frac{1}{2}}=5\)，則 \(x+\dfrac{1}{x}=\)？`,
+    options: { A: "21", B: "23", C: "25", D: "27" }
+  };
+
+  window.MATH_CONTENT["92C-13"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`設 \(\log_{3x}27=3\)，則 \(x=\)？`,
+    options: { A: "1", B: "2", C: "3", D: "4" }
+  };
+
+  window.MATH_CONTENT["92C-14"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`\(\log_{10}0.0436\) 之首數為何？`,
+    options: { A: String.raw`\(-3\)`, B: String.raw`\(-2\)`, C: String.raw`\(-1\)`, D: "0" }
+  };
+
+  window.MATH_CONTENT["92C-15"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`書架上有 5 冊不同的護理課本，3 冊不同的數學課本，若某生欲由護理、數學課本中各選一冊，則共有多少種選法？`,
+    options: { A: "8", B: "15", C: "125", D: "243" }
+  };
+
+  window.MATH_CONTENT["92C-16"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`若將「仁心仁術」四個字任意作直線排列，則共有多少種排法？`,
+    options: { A: "6", B: "8", C: "12", D: "24" }
+  };
+
+  window.MATH_CONTENT["92C-17"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`平面上有 8 個點，且任意三點不共線，若以其中每三點為頂點畫一個三角形，則共可畫出多少個三角形？`,
+    options: { A: "56", B: "72", C: "96", D: "120" }
+  };
+
+  window.MATH_CONTENT["92C-18"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`若要從 5 位醫師、10 位護士中，選出 3 位醫師、8 位護士組成一個醫療團，則共有多少種組成法？`,
+    options: { A: "55", B: "420", C: "450", D: "1365" }
+  };
+
+  window.MATH_CONTENT["92C-19"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`4 男 3 女排成一列，若男生之間不排女生，則共有多少種排法？`,
+    options: { A: String.raw`\(3!\times3!\)`, B: String.raw`\(3!\times4!\)`, C: String.raw`\(4!\times4!\)`, D: String.raw`\(7!\)` }
+  };
+
+  window.MATH_CONTENT["92C-20"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`將 10 枚相同的硬幣分給 3 個兒童，若每個兒童至少分得 2 枚，則共有多少種分法？`,
+    options: { A: "15", B: "20", C: "35", D: "60" }
+  };
+
+  window.MATH_CONTENT["92C-21"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`將 \(\left(x-\dfrac{1}{x}\right)^{3}\) 展開時，\(x\) 一次方項的係數為何？`,
+    options: { A: String.raw`\(-3\)`, B: String.raw`\(-1\)`, C: "1", D: "3" }
+  };
+
+  window.MATH_CONTENT["92C-22"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`設袋中有 10 元硬幣 6 枚，5 元硬幣 4 枚，某人由袋中任取一枚，則其所得金額的期望值為多少元？`,
+    options: { A: "5", B: "6", C: "7", D: "8" }
+  };
+
+  window.MATH_CONTENT["92C-23"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`擲 4 枚公正硬幣一次，出現 2 枚正面 2 枚反面的機率為何？`,
+    options: { A: String.raw`\(\dfrac{1}{4}\)`, B: String.raw`\(\dfrac{3}{8}\)`, C: String.raw`\(\dfrac{1}{2}\)`, D: String.raw`\(\dfrac{5}{8}\)` }
+  };
+
+  window.MATH_CONTENT["92C-24"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`設某校學生有 40% 為男生，60% 為女生；又知男生中有 5% 罹患感冒，而女生中有 3% 罹患感冒；今從中任取一人，則此人罹患感冒之機率為何？`,
+    options: { A: "0.018", B: "0.02", C: "0.038", D: "0.04" }
+  };
+
+  window.MATH_CONTENT["92C-25"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`若擲一公正的骰子兩次，則兩次的點數和大於 10 之機率為何？`,
+    options: { A: String.raw`\(\dfrac{1}{18}\)`, B: String.raw`\(\dfrac{1}{12}\)`, C: String.raw`\(\dfrac{1}{9}\)`, D: String.raw`\(\dfrac{1}{6}\)` }
+  };
+})();
+
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+  window.MATH_CONTENT["91A-1"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`用 \(x^2-x+1\) 去除 \(2x^3-3x^2+2x-5\)，得到的餘式為何？`,
+    options: { A: String.raw`\(-x-4\)`, B: String.raw`\(x+4\)`, C: String.raw`\(-x^2-5\)`, D: String.raw`\(x^2+5\)` }
+  };
+  window.MATH_CONTENT["91A-2"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`下列何者為 \(x^3-6x^2+11x-6\) 的因式？`,
+    options: { A: String.raw`\(x+1\)`, B: String.raw`\(x+2\)`, C: String.raw`\(x-4\)`, D: String.raw`\(x-3\)` }
+  };
+  window.MATH_CONTENT["91A-3"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`坐標平面上兩點 \(P(1,3)\) 和 \(Q(2,5)\) 的直線距離為何？`,
+    options: { A: String.raw`\(\sqrt{3}\)`, B: String.raw`\(\sqrt{5}\)`, C: "3", D: "5" }
+  };
+  window.MATH_CONTENT["91A-4"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\left(\dfrac{1}{27}\right)^{3}\times 81^{2}=?\)`,
+    options: { A: String.raw`\(\dfrac{1}{3}\)`, B: "1", C: "3", D: "9" }
+  };
+  window.MATH_CONTENT["91A-5"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\log_{10}3+\log_{10}50+\log_{10}7-\log_{10}105=?\)`,
+    options: { A: "1", B: "3", C: "5", D: "15" }
+  };
+  window.MATH_CONTENT["91A-6"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知 \(\tan 22°=k\)，則 \(\sin 2002°=?\)`,
+    options: {
+      A: String.raw`\(\dfrac{1}{\sqrt{k^2+1}}\)`,
+      B: String.raw`\(\dfrac{-1}{\sqrt{k^2+1}}\)`,
+      C: String.raw`\(\dfrac{k}{\sqrt{k^2+1}}\)`,
+      D: String.raw`\(\dfrac{-k}{\sqrt{k^2+1}}\)`
+    }
+  };
+  window.MATH_CONTENT["91A-7"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`設 \(\vec{a}\) 與 \(\vec{b}\) 為兩向量，\(\vec{a}=(x,y)\)，\(x\)、\(y\) 為實數，且 \(|\vec{a}|=\sqrt{13}\)，\(\vec{b}=(3,-2)\)，則 \(\vec{a}\) 與 \(\vec{b}\) 之內積的最大值為何？`,
+    options: { A: String.raw`\(\sqrt{13}\)`, B: String.raw`\(\sqrt{65}\)`, C: "13", D: "65" }
+  };
+  window.MATH_CONTENT["91A-8"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知圓過點 \((4,0)\)、\((-4,0)\)、\((0,3)\)，若此圓半徑為 \(r\)，則 \(r=?\)`,
+    options: { A: "4", B: String.raw`\(\dfrac{25}{6}\)`, C: "5", D: String.raw`\(\dfrac{26}{5}\)` }
+  };
+  window.MATH_CONTENT["91A-9"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`設函數 \(y=f(x)\) 的圖形為過 \((0,0)\) 與 \((1,1)\) 兩點之直線，函數 \(y=g(x)\) 的圖形為過 \((1,1)\) 與 \((3,0)\) 兩點之直線，若 \(u(x)=f(x)\cdot g(x)\)，則 \(u(x)\) 在 \(x=1\) 的導數 \(u'(1)=?\)`,
+    options: { A: "–1", B: "–0.5", C: "0.5", D: "1" }
+  };
+  window.MATH_CONTENT["91A-10"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，且 \(a\)、\(b\) 為實數，若 \(\dfrac{1-3i}{1+i}=a+bi\)，則 \(a+b=?\)`,
+    options: { A: "–3", B: "–1", C: "1", D: "3" }
+  };
+  window.MATH_CONTENT["91A-11"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知 \(\triangle ABC\) 三頂點為 \(A(-1,3)\)、\(B(2,1)\)、\(C(-3,-1)\)，若直線 \(\overleftrightarrow{AD}\) 平分 \(\triangle ABC\) 的面積，則直線 \(\overleftrightarrow{AD}\) 之方程式為何？`,
+    options: {
+      A: String.raw`\(3x+y=0\)`,
+      B: String.raw`\(3x-y+6=0\)`,
+      C: String.raw`\(6x-y+9=0\)`,
+      D: String.raw`\(6x+y+3=0\)`
+    }
+  };
+  window.MATH_CONTENT["91A-12"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`平面上曲線 \(y=x^2\) 與直線 \(y=1\) 所圍成區域的面積為何？`,
+    options: { A: String.raw`\(\dfrac{1}{3}\)`, B: String.raw`\(\dfrac{2}{3}\)`, C: "1", D: String.raw`\(\dfrac{4}{3}\)` }
+  };
+  window.MATH_CONTENT["91A-13"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`下列各等式何者恆為正確？`,
+    options: {
+      A: String.raw`\(\cos(x-y)=\cos(y-x)\)`,
+      B: String.raw`\(\cos 0=0\)`,
+      C: String.raw`\(\sin 2x=2\sin x\)`,
+      D: String.raw`\(\tan(x+y)=\tan x+\tan y\)`
+    }
+  };
+  window.MATH_CONTENT["91A-14"] = {
+    verified: true, sourcePage: 3,
+    stem: String.raw`已知平面上三點 \(A(1,3)\)、\(B(3,k)\)、\(C(5,1)\)，若向量 \(\overrightarrow{AB}\) 與 \(\overrightarrow{AC}\) 垂直，則 \(k=?\)`,
+    options: { A: "1", B: "3", C: "5", D: "7" }
+  };
+  window.MATH_CONTENT["91A-15"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`\(\triangle ABC\) 三內角 \(\angle A\)、\(\angle B\)、\(\angle C\) 之對應邊長分別為 \(a\)、\(b\)、\(c\)，若 \(a=2\sqrt{3}\)，\(b=2\)，\(\angle A=120°\)，則 \(c=?\)`,
+    options: { A: String.raw`\(\sqrt{3}\)`, B: "2", C: "3", D: String.raw`\(2\sqrt{3}\)` }
+  };
+  window.MATH_CONTENT["91A-16"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`坐標平面上以 \(A(8,0)\)、\(B\left(\dfrac{11}{2},\dfrac{5\sqrt{3}}{2}\right)\)、\(C(0,0)\) 三點為頂點的 \(\triangle ABC\) 中，\(\angle BAC\) 的度量為何？`,
+    options: { A: String.raw`\(30°\)`, B: String.raw`\(45°\)`, C: String.raw`\(60°\)`, D: String.raw`\(120°\)` }
+  };
+  window.MATH_CONTENT["91A-17"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`坐標平面上一矩形的四個頂點分別在原點、\(x\) 軸正向、\(y\) 軸正向及直線 \(x+2y=6\) 上，當此矩形有最大面積時，其周長為何？`,
+    options: { A: "8", B: "9", C: "10", D: "11" }
+  };
+  window.MATH_CONTENT["91A-18"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知 \(\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta\)，若 \(\tan\theta=\dfrac{3}{4}\)，試求 \(\cos 2\theta=?\)`,
+    options: {
+      A: String.raw`\(\dfrac{7}{25}\)`,
+      B: String.raw`\(\dfrac{7}{16}\)`,
+      C: String.raw`\(\dfrac{9}{16}\)`,
+      D: String.raw`\(\dfrac{24}{25}\)`
+    }
+  };
+  window.MATH_CONTENT["91A-19"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知 \(i=\sqrt{-1}\)，則 \((\sqrt{3}+i)^{10}=?\)`,
+    options: {
+      A: String.raw`\(2^{9}(1+\sqrt{3}i)\)`,
+      B: String.raw`\(2^{9}(1-\sqrt{3}i)\)`,
+      C: String.raw`\(2^{9}(\sqrt{3}+i)\)`,
+      D: String.raw`\(2^{9}(\sqrt{3}-i)\)`
+    }
+  };
+  window.MATH_CONTENT["91A-20"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`若 \(x\)、\(y\) 均為實數，且 \(\sqrt{(x-1)^2+(y-1)^2}+\sqrt{(x-7)^2+(y-1)^2}=10\)，則 \((x,y)\) 恆滿足下列那一個方程式？`,
+    options: {
+      A: String.raw`\(\dfrac{(x-4)^2}{16}-\dfrac{(y-1)^2}{25}=1\)`,
+      B: String.raw`\(\dfrac{(x-4)^2}{25}-\dfrac{(y-1)^2}{9}=1\)`,
+      C: String.raw`\(\dfrac{(x-4)^2}{25}+\dfrac{(y-1)^2}{16}=1\)`,
+      D: String.raw`\(\dfrac{(x-4)^2}{16}+\dfrac{(y-1)^2}{9}=1\)`
+    }
+  };
+  window.MATH_CONTENT["91A-21"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`試求定積分 \(\displaystyle\int_{\sqrt{3}}^{\sqrt{8}}\dfrac{x}{\sqrt{x^2+1}}\,dx=?\)`,
+    options: { A: "1", B: "2", C: "3", D: "4" }
+  };
+  window.MATH_CONTENT["91A-22"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知點 \(A(5,6)\) 在拋物線 \((x-1)^2=4(y-2)\) 上，則點 \(A\) 與此拋物線之焦點的距離為何？`,
+    options: { A: "2", B: "3", C: "4", D: "5" }
+  };
+  window.MATH_CONTENT["91A-23"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知直線 \(L\) 過點 \((1,5)\)，且垂直於直線 \(2x-3y+6=0\)，則 \(L\) 與 \(x\) 軸的交點坐標為何？`,
+    options: {
+      A: String.raw`\(\left(\dfrac{-13}{2},0\right)\)`,
+      B: String.raw`\(\left(\dfrac{-7}{3},0\right)\)`,
+      C: String.raw`\(\left(\dfrac{13}{3},0\right)\)`,
+      D: String.raw`\(\left(\dfrac{17}{2},0\right)\)`
+    }
+  };
+  window.MATH_CONTENT["91A-24"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`設函數 \(f(x)=\sin|x|\)，則下列敘述何者正確？`,
+    options: {
+      A: String.raw`\(f(x)\) 在 \(x=-\pi\) 的導數 \(f'(-\pi)=-1\)`,
+      B: String.raw`\(f(x)\) 在 \(x=\pi\) 的導數 \(f'(\pi)=-1\)`,
+      C: String.raw`\(f(x)\) 在 \(x=0\) 的導數 \(f'(0)=1\)`,
+      D: String.raw`\(f(x)\) 在 \(x=0\) 的導數 \(f'(0)=-1\)`
+    }
+  };
+  window.MATH_CONTENT["91A-25"] = {
+    verified: true, sourcePage: 4,
+    stem: String.raw`已知 \(x\)、\(y\) 均為實數且滿足不等式 \(x\geq 0\)，\(y\geq 0\)，\(4x+3y\geq 18\)，\(x+3y\geq 9\)，則 \(x+y\) 的最小值為何？`,
+    options: { A: "4", B: "5", C: "6", D: "9" }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+
+  window.MATH_CONTENT["91B-1"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`用 \(x^{2}-x+1\) 去除 \(2x^{3}-3x^{2}+2x-5\)，得到的餘式為何？`,
+    options: { A: String.raw`\(-x-4\)`, B: String.raw`\(x+4\)`, C: String.raw`\(-x^{2}-5\)`, D: String.raw`\(x^{2}+5\)` }
+  };
+  window.MATH_CONTENT["91B-2"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`下列何者為 \(x^{3}-6x^{2}+11x-6\) 的因式？`,
+    options: { A: String.raw`\(x+1\)`, B: String.raw`\(x+2\)`, C: String.raw`\(x-4\)`, D: String.raw`\(x-3\)` }
+  };
+  window.MATH_CONTENT["91B-3"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`坐標平面上兩點 \(P(1,3)\) 和 \(Q(2,5)\) 的直線距離為何？`,
+    options: { A: String.raw`\(\sqrt{3}\)`, B: String.raw`\(\sqrt{5}\)`, C: "3", D: "5" }
+  };
+  window.MATH_CONTENT["91B-4"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\left(\dfrac{1}{27}\right)^{3}\times 81^{2}=\) ?`,
+    options: { A: String.raw`\(\dfrac{1}{3}\)`, B: "1", C: "3", D: "9" }
+  };
+  window.MATH_CONTENT["91B-5"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\log_{10}3+\log_{10}50+\log_{10}7-\log_{10}105=\) ?`,
+    options: { A: "1", B: "3", C: "5", D: "15" }
+  };
+  window.MATH_CONTENT["91B-6"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`已知一元二次方程式的兩根之積為 \(-12\)，兩根之平方和為 25，且兩根之和為正數，則其方程式為何？`,
+    options: {
+      A: String.raw`\(x^{2}-x+12=0\)`,
+      B: String.raw`\(x^{2}-x-12=0\)`,
+      C: String.raw`\(x^{2}+x-12=0\)`,
+      D: String.raw`\(x^{2}+x+12=0\)`
+    }
+  };
+  window.MATH_CONTENT["91B-7"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`已知 \(a>0\) 且 \(a^{2x}=2\)，試求 \(a^{3x}+a^{-3x}=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{65}{8}\)`,
+      B: String.raw`\(\dfrac{81}{8}\)`,
+      C: String.raw`\(\dfrac{9\sqrt{2}}{8}\)`,
+      D: String.raw`\(\dfrac{9\sqrt{2}}{4}\)`
+    }
+  };
+  window.MATH_CONTENT["91B-8"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`設函數 \(f(x)=x+\dfrac{1}{x}\)，則下列何者恆為正確？`,
+    options: {
+      A: String.raw`\(f(x)=f(-x)\)`,
+      B: String.raw`\(f(x)=-f(x)\)`,
+      C: String.raw`\(f(x)=f\left(\dfrac{1}{x}\right)\)`,
+      D: String.raw`\(f(x)=\dfrac{1}{f(x)}\)`
+    }
+  };
+  window.MATH_CONTENT["91B-9"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`試求 \(\cot\dfrac{15\pi}{4}\tan\left(\dfrac{-5\pi}{4}\right)+\sin\left(\dfrac{-5\pi}{3}\right)\cos\dfrac{7\pi}{6}+\cos\left(\dfrac{-\pi}{2}\right)\sin(-\pi)=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{-7}{4}\)`,
+      B: String.raw`\(\dfrac{1}{4}\)`,
+      C: String.raw`\(\dfrac{7}{4}\)`,
+      D: String.raw`\(\dfrac{3}{2}\)`
+    }
+  };
+  window.MATH_CONTENT["91B-10"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`試求 \((\sin5^{\circ}-\csc5^{\circ})^{2}+(\cos5^{\circ}-\sec5^{\circ})^{2}-(\tan5^{\circ})^{2}-(\cot5^{\circ})^{2}=\) ?`,
+    options: { A: "-1", B: "0", C: "1", D: "2" }
+  };
+  window.MATH_CONTENT["91B-11"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`過點 \(A(4,-1)\) 且與直線 \(2x-y+5=0\) 垂直的直線方程式為何？`,
+    options: {
+      A: String.raw`\(x+y-3=0\)`,
+      B: String.raw`\(2x+y-7=0\)`,
+      C: String.raw`\(x+2y-2=0\)`,
+      D: String.raw`\(x+2y-4=0\)`
+    }
+  };
+  window.MATH_CONTENT["91B-12"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`若某人以年利率 20% 複利向銀行借款十萬元，則 3 年後需歸還銀行本利和共多少元？`,
+    options: { A: "114400", B: "128800", C: "160000", D: "172800" }
+  };
+  window.MATH_CONTENT["91B-13"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`設 \(a\)、\(b\) 為常數，若方程式 \(x^{3}+6x^{2}+ax+b=0\) 的三根相等，則下列何者正確？`,
+    options: {
+      A: String.raw`\(2a=-3b\)`,
+      B: String.raw`\(3a=-2b\)`,
+      C: String.raw`\(2a=3b\)`,
+      D: String.raw`\(3a=2b\)`
+    }
+  };
+  window.MATH_CONTENT["91B-14"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`設 \(a\)、\(b\) 為常數，若 \(f(x)=ax+b\)，且 \(f(1)=2\)，\(f(2)=5\)，則 \(f(-1)=\) ?`,
+    options: { A: "-4", B: "-3", C: "0", D: "5" }
+  };
+  window.MATH_CONTENT["91B-15"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`已知 \(A(2,1)\)、\(B(6,3)\)、\(C(k,5)\) 三點在坐標平面上無法構成一個三角形，則 \(k=\) ?`,
+    options: { A: "8", B: "10", C: "12", D: "14" }
+  };
+  window.MATH_CONTENT["91B-16"] = {
+    verified: true, sourcePage: 5,
+    stem: String.raw`已知 \(\triangle ABC\) 中，點 \(A\) 的坐標為 \((-2,3)\)，點 \(B\) 和點 \(C\) 位於直線 \(4x-3y+2=0\) 上，且線段 \(\overline{BC}\) 的長度為 4，試問 \(\triangle ABC\) 的面積為何？`,
+    options: { A: "4", B: "6", C: "8", D: "10" }
+  };
+  window.MATH_CONTENT["91B-17"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`已知 \(4<(2x-3)^{2}<25\)，試求 \(x\) 的範圍為何？`,
+    options: {
+      A: String.raw`\(-1<x<\dfrac{5}{2}\)`,
+      B: String.raw`\(\dfrac{-3}{2}<x<-1\) 或 \(\dfrac{5}{2}<x<4\)`,
+      C: String.raw`\(-1<x<4\)`,
+      D: String.raw`\(-1<x<\dfrac{1}{2}\) 或 \(\dfrac{5}{2}<x<4\)`
+    }
+  };
+  window.MATH_CONTENT["91B-18"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`男生 8 人，女生 6 人，若要選出兩男兩女組成一代表隊，則共有幾種組法？`,
+    options: { A: "120", B: "180", C: "210", D: "420" }
+  };
+  window.MATH_CONTENT["91B-19"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`試求平面上通過 \(A(0,0)\)、\(B(6,6)\) 兩點，且圓心在 \(y\) 軸上的圓方程式為何？`,
+    options: {
+      A: String.raw`\(x^{2}+y^{2}-12y=0\)`,
+      B: String.raw`\(x^{2}+y^{2}-6x-6y=0\)`,
+      C: String.raw`\(x^{2}+y^{2}-4x-8y=0\)`,
+      D: String.raw`\(x^{2}+y^{2}-8x-4y=0\)`
+    }
+  };
+  window.MATH_CONTENT["91B-20"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`設 \(\alpha\)、\(\beta\) 為方程式 \(\log_{2}x=\log_{x}2\) 的兩根，則 \(\alpha^{3}+\alpha\beta+\beta^{3}=\) ?`,
+    options: {
+      A: String.raw`\(\dfrac{55}{8}\)`,
+      B: String.raw`\(\dfrac{57}{8}\)`,
+      C: String.raw`\(\dfrac{71}{8}\)`,
+      D: String.raw`\(\dfrac{73}{8}\)`
+    }
+  };
+  window.MATH_CONTENT["91B-21"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`設四正數 \(a\)、\(b\)、\(c\)、\(d\) 成等比數列，且 \(a<b<c<d\)，\(a+d=28\)，\(b+c=12\)，試求其公比之值為何？`,
+    options: {
+      A: String.raw`\(\dfrac{1}{4}\)`,
+      B: String.raw`\(\dfrac{1}{3}\)`,
+      C: "3", D: "4"
+    }
+  };
+  window.MATH_CONTENT["91B-22"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`圓 \(x^{2}+y^{2}+4x+8y=0\) 所圍成的面積為何？`,
+    options: {
+      A: String.raw`\(\dfrac{5}{4}\pi\)`,
+      B: String.raw`\(5\pi\)`,
+      C: String.raw`\(10\pi\)`,
+      D: String.raw`\(20\pi\)`
+    }
+  };
+  window.MATH_CONTENT["91B-23"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`甲、乙兩位警察射擊一兇犯，已知甲之命中率為 \(\dfrac{3}{4}\)，乙之命中率為 \(\dfrac{2}{3}\)。今甲、乙兩位警察同時對兇犯各發一槍，則此兇犯被擊中的機率為何？`,
+    options: {
+      A: String.raw`\(\dfrac{5}{12}\)`,
+      B: String.raw`\(\dfrac{7}{12}\)`,
+      C: String.raw`\(\dfrac{2}{3}\)`,
+      D: String.raw`\(\dfrac{11}{12}\)`
+    }
+  };
+  window.MATH_CONTENT["91B-24"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`設袋中有大小相同的紅球 3 個、白球 7 個。現自袋中任取一球，若取到紅球可得 50 元，取到白球可得 10 元，試問任取一球可得金額的期望值為多少元？`,
+    options: { A: "12", B: "22", C: "30", D: "42" }
+  };
+  window.MATH_CONTENT["91B-25"] = {
+    verified: true, sourcePage: 6,
+    stem: String.raw`試求 \((\log_{2}3+\log_{4}9)(\log_{3}4+\log_{9}2)=\) ?`,
+    options: { A: "1", B: "4", C: "5", D: "9" }
+  };
+})();
+(() => {
+  window.MATH_CONTENT = window.MATH_CONTENT || {};
+
+  window.MATH_CONTENT["91C-1"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`用 \(x^{2}-x+1\) 去除 \(2x^{3}-3x^{2}+2x-5\)，得到的餘式為何？`,
+    options: { A: String.raw`\(-x-4\)`, B: String.raw`\(x+4\)`, C: String.raw`\(-x^{2}-5\)`, D: String.raw`\(x^{2}+5\)` }
+  };
+
+  window.MATH_CONTENT["91C-2"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`下列何者為 \(x^{3}-6x^{2}+11x-6\) 的因式？`,
+    options: { A: String.raw`\(x+1\)`, B: String.raw`\(x+2\)`, C: String.raw`\(x-4\)`, D: String.raw`\(x-3\)` }
+  };
+
+  window.MATH_CONTENT["91C-3"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`坐標平面上兩點 \(P(1,3)\) 和 \(Q(2,5)\) 的直線距離為何？`,
+    options: { A: String.raw`\(\sqrt{3}\)`, B: String.raw`\(\sqrt{5}\)`, C: "3", D: "5" }
+  };
+
+  window.MATH_CONTENT["91C-4"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\left(\dfrac{1}{27}\right)^{3}\times 81^{2}=\) ?`,
+    options: { A: String.raw`\(\dfrac{1}{3}\)`, B: "1", C: "3", D: "9" }
+  };
+
+  window.MATH_CONTENT["91C-5"] = {
+    verified: true, sourcePage: 2,
+    stem: String.raw`試求 \(\log_{10}3+\log_{10}50+\log_{10}7-\log_{10}105=\) ?`,
+    options: { A: "1", B: "3", C: "5", D: "15" }
+  };
+
+  window.MATH_CONTENT["91C-6"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`已知一個一元二次方程式的兩根為 \(-\dfrac{1}{2}\) 及 \(\dfrac{2}{3}\)，則此方程式為何？`,
+    options: {
+      A: String.raw`\(x^{2}+\dfrac{1}{6}x+\dfrac{1}{3}=0\)`,
+      B: String.raw`\(x^{2}-\dfrac{1}{6}x-\dfrac{1}{3}=0\)`,
+      C: String.raw`\(x^{2}+\dfrac{1}{6}x-\dfrac{1}{3}=0\)`,
+      D: String.raw`\(x^{2}-\dfrac{1}{6}x+\dfrac{1}{3}=0\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-7"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`將 \((x^{2}+2x-x^{-1}+1)^{2}\) 展開時，\(x\) 項之係數為何？`,
+    options: { A: String.raw`\(-2\)`, B: "0", C: "1", D: "2" }
+  };
+
+  window.MATH_CONTENT["91C-8"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`若 \(a\) 為 \(x+1=\sqrt{x+3}\) 之解，則下列那個選項正確？`,
+    options: {
+      A: String.raw`\(-3<a<-1\)`,
+      B: String.raw`\(-1<a<1\)`,
+      C: String.raw`\(0<a<2\)`,
+      D: String.raw`\(2<a<4\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-9"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`下列那個函數的圖形為一直線？`,
+    options: {
+      A: String.raw`\(f(x)=x^{2}+1\)`,
+      B: String.raw`\(g(x)=-x^{2}+2\)`,
+      C: String.raw`\(h(x)=-x+1\)`,
+      D: String.raw`\(k(x)=x^{3}-1\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-10"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`化簡 \(2^{x}+2^{x+1}=\) ?`,
+    options: {
+      A: String.raw`\(3\cdot 2^{x}\)`,
+      B: String.raw`\(2^{2x+1}\)`,
+      C: String.raw`\(2^{x(x+1)}\)`,
+      D: String.raw`\(4^{2x+1}\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-11"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`已知兩指數函數 \(y=2^{x}\) 與 \(y=\left(\dfrac{1}{2}\right)^{x}\) 的圖形相交於一點，則下列何者為此交點的坐標？`,
+    options: {
+      A: String.raw`\((1,0)\)`,
+      B: String.raw`\((0,1)\)`,
+      C: String.raw`\((0,0)\)`,
+      D: String.raw`\((1,1)\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-12"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`若 \(\log_{9}x=1.5\)，則 \(x=\) ?`,
+    options: { A: "3", B: "9", C: "27", D: "81" }
+  };
+
+  window.MATH_CONTENT["91C-13"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`有一疾病，其感染人數每年加倍，若於 1980 年 10 月發現有 10 人感染該疾病，則在下列那一年 10 月，感染人數會首次超過四百萬人？（已知 \(\log 2=0.3010\)）`,
+    options: { A: "1999 年", B: "2001 年", C: "2003 年", D: "2005 年" }
+  };
+
+  window.MATH_CONTENT["91C-14"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`某醫院有內科護士 3 人，外科護士 4 人，今欲從兩科中各派一人到偏遠地區服務，則共有幾種派法？`,
+    options: { A: "7", B: "12", C: "64", D: "81" }
+  };
+
+  window.MATH_CONTENT["91C-15"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`由 1、2、3、5、7、8 六個數字，任取三個數字排成三位數，且數字不得重複，則共有幾種排法？`,
+    options: { A: "60", B: "120", C: "180", D: "240" }
+  };
+
+  window.MATH_CONTENT["91C-16"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`福利社販賣 3 種飲料，有 4 位學生到福利社，每人選購一罐飲料，則 4 人共有幾種選法？`,
+    options: { A: "4", B: "12", C: "64", D: "81" }
+  };
+
+  window.MATH_CONTENT["91C-17"] = {
+    verified: true, sourcePage: 7,
+    stem: String.raw`甲、乙、丙、丁四個人組隊參加 400 公尺接力賽跑，每人跑 100 公尺。其中甲不願意跑最後一棒，試問總共可排出幾種接力順序？`,
+    options: { A: "3", B: "9", C: "18", D: "24" }
+  };
+
+  window.MATH_CONTENT["91C-18"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`某種彩券共有 21 個不同號碼，從中選取 3 個不同的號碼為一組（不計順序），做為對獎的依據，則共有幾種不同的選法？`,
+    options: { A: "1330", B: "2660", C: "3990", D: "7980" }
+  };
+
+  window.MATH_CONTENT["91C-19"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`將 6 位護士分發到 3 所醫院實習，每所醫院分發 2 人，則共有多少種分法？`,
+    options: { A: "15", B: "45", C: "60", D: "90" }
+  };
+
+  window.MATH_CONTENT["91C-20"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`將 6 個相同的球全部放入兩個不同顏色的箱子中，若每箱的球數不限，則共有幾種放法？`,
+    options: { A: "4", B: "5", C: "6", D: "7" }
+  };
+
+  window.MATH_CONTENT["91C-21"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`某電器行有 10 台不同廠牌的電視，展示窗每次只能放 3 台。如果不考慮排列方式，則共有幾種不同的展示法？`,
+    options: { A: "27", B: "120", C: "300", D: "720" }
+  };
+
+  window.MATH_CONTENT["91C-22"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`某校護理科學生含小鳳在內共 12 人，任選 3 人到甲醫院實習，則小鳳被選到的機率為何？`,
+    options: {
+      A: String.raw`\(\dfrac{1}{5}\)`,
+      B: String.raw`\(\dfrac{1}{4}\)`,
+      C: String.raw`\(\dfrac{1}{3}\)`,
+      D: String.raw`\(\dfrac{1}{2}\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-23"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`擲一枚公正的硬幣 3 次，恰好出現兩次正面的機率為何？`,
+    options: {
+      A: String.raw`\(\dfrac{1}{8}\)`,
+      B: String.raw`\(\dfrac{3}{8}\)`,
+      C: String.raw`\(\dfrac{2}{5}\)`,
+      D: String.raw`\(\dfrac{2}{3}\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-24"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`擲一粒公正的骰子 3 次，則 3 次點數之和小於 6 的機率為何？`,
+    options: {
+      A: String.raw`\(\dfrac{4}{216}\)`,
+      B: String.raw`\(\dfrac{6}{216}\)`,
+      C: String.raw`\(\dfrac{10}{216}\)`,
+      D: String.raw`\(\dfrac{14}{216}\)`
+    }
+  };
+
+  window.MATH_CONTENT["91C-25"] = {
+    verified: true, sourcePage: 8,
+    stem: String.raw`根據目前的流行病調查發現，每 1000 名成年人當中就有 12 人罹患感冒，15 人罹患肝炎，其中 3 人同時罹患感冒和肝炎，就此現象而言，每一成年人罹患感冒或肝炎的機率為多少？`,
+    options: { A: "0.018", B: "0.024", C: "0.027", D: "0.03" }
+  };
+})();
+
