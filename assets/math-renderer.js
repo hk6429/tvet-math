@@ -41,6 +41,10 @@
       return `<div class="transcription-pending">本題逐字 LaTeX 版正在校對，暫以官方原題呈現。</div><img class="question-image" src="${q.image}" alt="${q.exam.year} 學年度${q.exam.label}第 ${q.no} 題官方題面">`;
     }
     const figures = (content.figures || []).map((figure) => `<figure class="question-figure"><img src="${figure.src}" alt="${escapeHtml(figure.alt)}">${figure.caption ? `<figcaption>${escapeHtml(figure.caption)}</figcaption>` : ""}</figure>`).join("");
+    // 選項本身是圖形（直方圖、函數圖形等）的題目，原題圖必須直接展開才作答得了
+    if (content.imageOptions) {
+      return `<div class="structured-question"><div class="stem">${richText(content.stem)}</div>${figures}<img class="question-image" src="${q.image}" alt="${q.exam.year} 學年度${q.exam.label}第 ${q.no} 題官方題面（含圖形選項）"></div>`;
+    }
     return `<div class="structured-question"><div class="stem">${richText(content.stem)}</div>${figures}</div>${official}`;
   }
 
