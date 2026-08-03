@@ -1,4 +1,7 @@
 (() => {
+  const apiUrl = ["tvet-math.pages.dev", "tvet-math.netlify.app"].includes(location.hostname)
+    ? "https://tvet-math.vercel.app/api/report"
+    : "/api/report";
   const dialog = document.getElementById("reportDialog");
   const form = document.getElementById("reportForm");
   const reasonSelect = document.getElementById("reportReason");
@@ -50,6 +53,8 @@
 
   function questionContext(question) {
     const content = window.MathQuestionUI.contentFor(question) || {};
+    const selectedChoices = [...document.querySelectorAll(".choice.selected")].map((button) => button.dataset.choice).join(",");
+    const selected = selectedChoices || document.getElementById("fillAnswer")?.value.trim() || "";
     return {
       id: `${question.exam.year}${question.exam.subject}-${question.no}`,
       year: question.exam.year,
@@ -61,7 +66,9 @@
       prompt: content.stem || question.summary,
       options: content.options || {},
       answer: question.answer,
+      selected,
       explanation: Array.isArray(content.solution) ? content.solution.join("\n") : String(content.solution || "尚無文字解析"),
+      source: `${question.exam.source || "技專校院入學測驗中心官方題本"}；第 ${question.sourcePage || "未註明"} 頁`,
       image: question.image || "",
     };
   }
@@ -83,7 +90,7 @@
     };
 
     try {
-      const response = await fetch("/api/report", {
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(payload),
