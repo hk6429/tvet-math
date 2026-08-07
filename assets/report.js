@@ -1,7 +1,7 @@
 (() => {
-  const apiUrl = ["tvet-math.pages.dev", "tvet-math.netlify.app"].includes(location.hostname)
-    ? "https://tvet-math.vercel.app/api/report"
-    : "/api/report";
+  const apiUrl = ["tvet-math.pages.dev", "localhost", "127.0.0.1"].includes(location.hostname)
+    ? "/api/report"
+    : "https://tvet-math.pages.dev/api/report";
   const dialog = document.getElementById("reportDialog");
   const form = document.getElementById("reportForm");
   const reasonSelect = document.getElementById("reportReason");

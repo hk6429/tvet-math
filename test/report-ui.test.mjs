@@ -20,7 +20,7 @@ test("練習頁提供一般與單題回報，並保存完整題目上下文", as
   for (const field of ["prompt", "options", "answer", "selected", "explanation", "source", "image"]) {
     assert.match(client, new RegExp(`${field}[,:]`));
   }
-  assert.match(client, /https:\/\/tvet-math\.vercel\.app\/api\/report/);
+  assert.match(client, /https:\/\/tvet-math\.pages\.dev\/api\/report/);
   assert.match(styles, /\.report-dialog/);
   assert.match(styles, /\.report-question-btn/);
 });

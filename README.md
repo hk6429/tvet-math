@@ -55,5 +55,5 @@ npm run crop:115        # 原卷裁圖（layouts 目前為空，逐年補版面�
 
 - `sources/`、`staging/` 由題庫結構化產線維護，前端引擎不要動。
 - 站上有兩套獨立渲染（index 與 check），改品牌或改選項邏輯時兩邊都要檢查。
-- `assets/report.js` 回報表單在 Vercel 會 POST `/api/report`，Cloudflare Pages 與 Netlify 則跨站送往 Vercel API。
-- `api/report.mjs` 需要在 Vercel 設定 `TELEGRAM_BOT_TOKEN` 與 `TELEGRAM_REPORT_CHAT_ID`；機密資料不得寫入版控。
+- `assets/report.js` 在 Cloudflare Pages 會 POST `/api/report`，Vercel 與 Netlify 則跨站送往 Cloudflare Pages API。
+- Cloudflare Pages Function 需要設定 `TELEGRAM_BOT_TOKEN` 與 `TELEGRAM_CHAT_ID`；機密資料不得寫入版控。
